@@ -1,4 +1,4 @@
-# LLM Model Updates Tracker
+# LLM Model Updates Tracker (Keep Updating~)
 
 A tracker for the latest updates on Large Language Models from various companies.
 
