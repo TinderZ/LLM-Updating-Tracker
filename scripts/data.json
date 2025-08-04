@@ -2,97 +2,97 @@
     {
         "company": "OpenAI",
         "model_name": "chatgpt-4o-latest-20250326",
-        "update_date": "2024-03-26",
+        "update_date": "2025-03-26",
         "features": ""
     },
     {
         "company": "OpenAI",
         "model_name": "o3-2025-04-16",
-        "update_date": "2024-04-16",
+        "update_date": "2025-04-16",
         "features": ""
     },
     {
         "company": "Alibaba",
         "model_name": "Qwen3-235B-A22B",
-        "update_date": "2024-04-29",
+        "update_date": "2025-04-29",
         "features": ""
     },
     {
         "company": "Google",
         "model_name": "gemini-2.5-pro-preview-05-06",
-        "update_date": "2024-05-06",
+        "update_date": "2025-05-06",
         "features": ""
     },
     {
         "company": "Anthropic",
         "model_name": "claude-opus/sonnet-4-20250514",
-        "update_date": "2024-05-14",
+        "update_date": "2025-05-14",
         "features": ""
     },
     {
         "company": "Google",
         "model_name": "gemini-2.5-flash-preview-05-20",
-        "update_date": "2024-05-20",
+        "update_date": "2025-05-20",
         "features": ""
     },
     {
         "company": "Deepseek",
         "model_name": "deepseek-r1-0528",
-        "update_date": "2024-05-28",
+        "update_date": "2025-05-28",
         "features": ""
     },
     {
         "company": "Google",
         "model_name": "gemini-2.5-pro-preview-06-05",
-        "update_date": "2024-06-05",
+        "update_date": "2025-06-05",
         "features": ""
     },
     {
         "company": "MiniMax",
         "model_name": "MiniMax-M1-80k/40k",
-        "update_date": "2024-06-11",
+        "update_date": "2025-06-11",
         "features": ""
     },
     {
         "company": "Moonshot",
         "model_name": "Kimi-Dev-72B",
-        "update_date": "2024-06-17",
+        "update_date": "2025-06-17",
         "features": "支持全球最长的上下文窗口，包括 100 万 tokens 输入、8 万 tokens 输出。 A Strong and Open-source Coding LLM for Issue Resolution"
     },
     {
         "company": "Google",
         "model_name": "gemini-2.5-flash-lite-preview-06-05",
-        "update_date": "2024-06-18",
+        "update_date": "2025-06-18",
         "features": ""
     },
     {
         "company": "Moonshot",
         "model_name": "Kimi-Research",
-        "update_date": "2024-06-20",
+        "update_date": "2025-06-20",
         "features": ""
     },
     {
         "company": "xAI (Grok)",
         "model_name": "grok4, grok4-heavy",
-        "update_date": "2024-07-10",
+        "update_date": "2025-07-10",
         "features": ""
     },
     {
         "company": "Moonshot",
         "model_name": "Kimi-K2",
-        "update_date": "2024-07-12",
+        "update_date": "2025-07-12",
         "features": ""
     },
     {
         "company": "Alibaba",
         "model_name": "Qwen3-235B-A22B-2507",
-        "update_date": "2024-07-22",
+        "update_date": "2025-07-22",
         "features": ""
     },
     {
         "company": "Alibaba",
         "model_name": "Qwen3-Coder(480B-A35B-Instruct...)",
-        "update_date": "2024-07-23",
+        "update_date": "2025-07-23",
         "features": ""
     }
 ]

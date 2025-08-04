@@ -2,45 +2,73 @@
 
 A tracker for the latest updates on Large Language Models from various companies.
 
-*Last updated: 2024-07-24*
+<!-- LAST_UPDATED_START -->
+*Last updated: 2025-08-04*
+<!-- LAST_UPDATED_END -->
 
+<!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
-| Alibaba      | Qwen3-Coder(480B-A35B-Instruct...) | 07月23日    |                                                              |
-| Alibaba      | Qwen3-235B-A22B-2507               | 07月22日    |                                                              |
-| Moonshot     | Kimi-K2                            | 07月12日    |                                                              |
-| xAI (Grok)   | grok4, grok4-heavy                 | 07月10日    |                                                              |
-| Moonshot     | Kimi-Research                      | 06月20日    |                                                              |
-| Google       | gemini-2.5-flash-lite-preview-06-05| 06月18日    |                                                              |
-| Moonshot     | Kimi-Dev-72B                       | 06月17日    | 支持全球最长的上下文窗口，包括 100 万 tokens 输入、8 万 tokens 输出。 A Strong and Open-source Coding LLM for Issue Resolution |
-| MiniMax      | MiniMax-M1-80k/40k                 | 06月11日    |                                                              |
-| Google       | gemini-2.5-pro-preview-06-05       | 06月05日    |                                                              |
-| Deepseek     | deepseek-r1-0528                   | 05月28日    |                                                              |
-| Google       | gemini-2.5-flash-preview-05-20     | 05月20日    |                                                              |
-| Anthropic    | claude-opus/sonnet-4-20250514      | 05月14日    |                                                              |
-| Google       | gemini-2.5-pro-preview-05-06       | 05月06日    |                                                              |
-| Alibaba      | Qwen3-235B-A22B                    | 04月29日    |                                                              |
-| OpenAI       | o3-2025-04-16                      | 04月16日    |                                                              |
-| OpenAI       | chatgpt-4o-latest-20250326         | 03月26日    |                                                              |
+| Alibaba | Qwen3-Coder(480B-A35B-Instruct...) | 2025-07-23 |  |
+| Alibaba | Qwen3-235B-A22B-2507 | 2025-07-22 |  |
+| Moonshot | Kimi-K2 | 2025-07-12 |  |
+| xAI (Grok) | grok4, grok4-heavy | 2025-07-10 |  |
+| Moonshot | Kimi-Research | 2025-06-20 |  |
+| Google | gemini-2.5-flash-lite-preview-06-05 | 2025-06-18 |  |
+| Moonshot | Kimi-Dev-72B | 2025-06-17 | Supports the world's longest context window, including 1 million input tokens and 80,000 output tokens. A Strong and Open-source Coding LLM for Issue Resolution |
+| MiniMax | MiniMax-M1-80k/40k | 2025-06-11 |  |
+| Google | gemini-2.5-pro-preview-06-05 | 2025-06-05 |  |
+| Deepseek | deepseek-r1-0528 | 2025-05-28 |  |
+| Google | gemini-2.5-flash-preview-05-20 | 2025-05-20 |  |
+| Anthropic | claude-opus/sonnet-4-20250514 | 2025-05-14 |  |
+| Google | gemini-2.5-pro-preview-05-06 | 2025-05-06 |  |
+| Alibaba | Qwen3-235B-A22B | 2025-04-29 |  |
+| OpenAI | o3-2025-04-16 | 2025-04-16 |  |
+| OpenAI | chatgpt-4o-latest-20250326 | 2025-03-26 |  |
 
+<!-- TABLE_END -->
 
-## How to Maintain
+## 🌟 Features
 
-This repository is maintained using a Python script that generates this README file from a structured JSON data file.
+*   **Automatic Updates**: Automatically fetches the latest LLM updates from multiple sources daily via GitHub Actions.
+*   **Structured Data**: All model information is stored in an easy-to-parse `scripts/data.json` file.
+*   **Community-Driven**: Anyone is welcome to contribute new model information or improve the project.
+*   **Clear Overview**: The table in the README provides an at-a-glance view of model release dynamics from major companies.
 
-1.  **Add New Data**: To add a new model update, open `scripts/data.json` and add a new JSON object to the list. Make sure to follow the existing format.
+## ✍️ How to Contribute
 
-2.  **Update the README**: Run the following command from your project's root directory:
+We warmly welcome community contributions! You can participate in the following ways:
 
+### 1. Add or Update Model Information
+
+All model data is stored in the `scripts/data.json` file. If you find a new model release or incorrect information, please:
+
+1.  **Fork this repository**
+2.  **Modify `scripts/data.json`**: Add or update the corresponding model entry. Please ensure the JSON format is correct.
+3.  **(Optional) Update the README**: Run the following command locally to update the table in the README.
     ```bash
     python scripts/update_readme.py
     ```
+4.  **Submit a Pull Request**: We will review your contribution as soon as possible.
 
-    This will regenerate the table in this `README.md` file based on the latest data.
+### 2. Add New Information Sources
 
-3.  **Commit and Push**: Commit both the updated `scripts/data.json` and the newly generated `README.md` to your GitHub repository.
+Our automatic update script, `scripts/fetch_updates.py`, retrieves information via RSS feeds. If you have good information sources to recommend, you can:
 
-### Automation with GitHub Actions
+*   Directly modify the `RSS_FEEDS` list in `scripts/fetch_updates.py` and submit a Pull Request.
+*   Or, create an [Issue](https://github.com/your-username/your-repository/issues) and tell us the new RSS feed URL.
 
-For fully automated updates, you can set up a GitHub Actions workflow. Create a file named `.github/workflows/update_readme.yml` with a configuration that runs the `scripts/update_readme.py` script on every push to the main branch.
+### 3. Report Issues or Suggest Improvements
+
+If you encounter any problems or have any suggestions for improvement, feel free to submit an [Issue](https://github.com/your-username/your-repository/issues).
+
+## 🤖 Automation
+
+This repository uses GitHub Actions for automated updates.
+
+The workflow file is located at `.github/workflows/update_readme.yml`. It periodically runs the `scripts/fetch_updates.py` script to fetch updates, and then runs `scripts/update_readme.py` to update this `README.md`.
+
+## 📄 License
+
+This project is open-sourced under the [MIT License](LICENSE).
 
