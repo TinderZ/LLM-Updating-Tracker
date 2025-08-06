@@ -66,7 +66,10 @@ If you encounter any problems or have any suggestions for improvement, feel free
 
 This repository uses GitHub Actions for automated updates.
 
-The workflow file is located at `.github/workflows/update_readme.yml`. It periodically runs the `scripts/fetch_updates.py` script to fetch updates, and then runs `scripts/update_readme.py` to update this `README.md`.
+This repository uses GitHub Actions for automated updates, managed by two separate workflows:
+
+- `.github/workflows/fetch_data.yml`: Periodically fetches the latest model data by running `scripts/fetch_updates.py` and updates `scripts/data.json`.
+- `.github/workflows/update_readme.yml`: Periodically updates the `README.md` table by running `scripts/update_readme.py` and creates a pull request with the changes.
 
 ## 📄 License
 

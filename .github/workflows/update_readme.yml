@@ -23,11 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Download data artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: llm-data
-          path: scripts/
+
 
       - name: Update README.md
         run: python scripts/update_readme.py
