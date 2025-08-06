@@ -44,4 +44,4 @@ jobs:
           branch: "automated-llm-updates"
           base: "main" 
           labels: "automated-update, documentation"
-          assignees: "${{ github.actor }}"
+          # assignees: "${{ github.actor }}"
