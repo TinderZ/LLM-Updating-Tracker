@@ -1,0 +1,33 @@
+name: Fetch latest LLM data
+
+on:
+  schedule:
+    # 每天 UTC 时间 12:30 运行，即北京时间晚上 8:30
+    - cron: '30 12 * * *'
+  workflow_dispatch: # 允许在 Actions 标签页手动触发
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch latest model updates
+        run: python scripts/fetch_updates.py
+
+      - name: Upload data artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: llm-data
+          path: scripts/data.json

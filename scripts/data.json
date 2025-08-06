@@ -72,7 +72,7 @@
         "features": ""
     },
     {
-        "company": "xAI (Grok)",
+        "company": "xAI",
         "model_name": "grok4, grok4-heavy",
         "update_date": "2025-07-10",
         "features": ""
@@ -94,5 +94,23 @@
         "model_name": "Qwen3-Coder(480B-A35B-Instruct...)",
         "update_date": "2025-07-23",
         "features": ""
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "gpt-oss-120b, gpt-oss-20b",
+        "update_date": "2025-08-05",
+        "features": "Open-weight reasoning models (Apache 2.0 license). gpt-oss-120b (117B params) and gpt-oss-20b (21B params)."
+    },
+    {
+        "company": "Anthropic",
+        "model_name": "Claude Opus 4.1",
+        "update_date": "2025-08-05",
+        "features": "Drop-in replacement for Opus 4, with hybrid reasoning and extended thinking."
+    },
+    {
+        "company": "Google DeepMind",
+        "model_name": "Genie 3",
+        "update_date": "2025-08-05",
+        "features": "Foundation world model that generates real-time interactive 3D environments from text prompts. Research preview."
     }
 ]
