@@ -34,7 +34,7 @@ jobs:
       - name: Create Pull Request if changes exist
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           commit-message: "docs: auto-update LLM tracker data"
           title: "Automated LLM Updates"
           body: |
