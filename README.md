@@ -3,19 +3,22 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2025-08-04*
+*Last updated: 2025-08-07*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
+| OpenAI | gpt-oss-120b, gpt-oss-20b | 2025-08-05 | Open-weight reasoning models (Apache 2.0 license). gpt-oss-120b (117B params) and gpt-oss-20b (21B params). |
+| Anthropic | Claude Opus 4.1 | 2025-08-05 | Drop-in replacement for Opus 4, with hybrid reasoning and extended thinking. |
+| Google DeepMind | Genie 3 | 2025-08-05 | Foundation world model that generates real-time interactive 3D environments from text prompts. Research preview. |
 | Alibaba | Qwen3-Coder(480B-A35B-Instruct...) | 2025-07-23 |  |
 | Alibaba | Qwen3-235B-A22B-2507 | 2025-07-22 |  |
 | Moonshot | Kimi-K2 | 2025-07-12 |  |
-| xAI (Grok) | grok4, grok4-heavy | 2025-07-10 |  |
+| xAI | grok4, grok4-heavy | 2025-07-10 |  |
 | Moonshot | Kimi-Research | 2025-06-20 |  |
 | Google | gemini-2.5-flash-lite-preview-06-05 | 2025-06-18 |  |
-| Moonshot | Kimi-Dev-72B | 2025-06-17 | Supports the world's longest context window, including 1 million input tokens and 80,000 output tokens. A Strong and Open-source Coding LLM for Issue Resolution |
+| Moonshot | Kimi-Dev-72B | 2025-06-17 | 支持全球最长的上下文窗口，包括 100 万 tokens 输入、8 万 tokens 输出。 A Strong and Open-source Coding LLM for Issue Resolution |
 | MiniMax | MiniMax-M1-80k/40k | 2025-06-11 |  |
 | Google | gemini-2.5-pro-preview-06-05 | 2025-06-05 |  |
 | Deepseek | deepseek-r1-0528 | 2025-05-28 |  |
