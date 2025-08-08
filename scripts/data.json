@@ -1,99 +1,91 @@
 [
     {
         "company": "OpenAI",
-        "model_name": "chatgpt-4o-latest-20250326",
-        "update_date": "2025-03-26",
-        "features": ""
+        "model_name": "OpenAI Model v1.99.3",
+        "update_date": "2025-08-08",
+        "features": "## 1.99.3 (2025-08-07)\n\nFull Changelog: [v1.99.2...v1.99.3](https://github.com/openai/openai-python/compare/v1.99.2...v1.99.3)\n\n### Bug Fixes\n\n* **responses:** add output_text back ([585a4f1](https://github.com/openai/openai-python/commit/585a4f15e5a088bf8afee745bc4a7803775ac283))",
+        "source": "GitHub",
+        "link": "https://github.com/openai/openai-python/releases/tag/v1.99.3"
     },
     {
         "company": "OpenAI",
-        "model_name": "o3-2025-04-16",
-        "update_date": "2025-04-16",
-        "features": ""
+        "model_name": "PostNetworkAcademy/gpt2-robotics-PostNetworkAcademy",
+        "update_date": "2025-08-08",
+        "features": "Tags: peft, safetensors, base_model:adapter:gpt2, lora, transformers",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/PostNetworkAcademy/gpt2-robotics-PostNetworkAcademy"
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "DavidAU/OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix-gguf",
+        "update_date": "2025-08-08",
+        "features": "Tags: gguf, gpt_oss, gpt-oss, openai, mxfp4",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/DavidAU/OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix-gguf"
+    },
+    {
+        "company": "Meta",
+        "model_name": "strnan01/llama-1b-hot-6",
+        "update_date": "2025-08-08",
+        "features": "Tags: safetensors, llama, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/strnan01/llama-1b-hot-6"
+    },
+    {
+        "company": "Meta",
+        "model_name": "strnan01/llama-1b-hot-2",
+        "update_date": "2025-08-08",
+        "features": "Tags: safetensors, llama, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/strnan01/llama-1b-hot-2"
+    },
+    {
+        "company": "DeepSeek",
+        "model_name": "Thireus/DeepSeek-R1-0528-THIREUS-Q4_K_R4-SPECIAL_SPLIT",
+        "update_date": "2025-08-08",
+        "features": "Tags: gguf, arxiv:2505.23786, license:mit, endpoints_compatible, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/Thireus/DeepSeek-R1-0528-THIREUS-Q4_K_R4-SPECIAL_SPLIT"
+    },
+    {
+        "company": "DeepSeek",
+        "model_name": "Thireus/DeepSeek-R1-0528-THIREUS-Q4_1-SPECIAL_SPLIT",
+        "update_date": "2025-08-08",
+        "features": "Tags: gguf, arxiv:2505.23786, license:mit, endpoints_compatible, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/Thireus/DeepSeek-R1-0528-THIREUS-Q4_1-SPECIAL_SPLIT"
     },
     {
         "company": "Alibaba",
-        "model_name": "Qwen3-235B-A22B",
-        "update_date": "2025-04-29",
-        "features": ""
-    },
-    {
-        "company": "Google",
-        "model_name": "gemini-2.5-pro-preview-05-06",
-        "update_date": "2025-05-06",
-        "features": ""
-    },
-    {
-        "company": "Anthropic",
-        "model_name": "claude-opus/sonnet-4-20250514",
-        "update_date": "2025-05-14",
-        "features": ""
-    },
-    {
-        "company": "Google",
-        "model_name": "gemini-2.5-flash-preview-05-20",
-        "update_date": "2025-05-20",
-        "features": ""
-    },
-    {
-        "company": "Deepseek",
-        "model_name": "deepseek-r1-0528",
-        "update_date": "2025-05-28",
-        "features": ""
-    },
-    {
-        "company": "Google",
-        "model_name": "gemini-2.5-pro-preview-06-05",
-        "update_date": "2025-06-05",
-        "features": ""
-    },
-    {
-        "company": "MiniMax",
-        "model_name": "MiniMax-M1-80k/40k",
-        "update_date": "2025-06-11",
-        "features": ""
-    },
-    {
-        "company": "Moonshot",
-        "model_name": "Kimi-Dev-72B",
-        "update_date": "2025-06-17",
-        "features": "支持全球最长的上下文窗口，包括 100 万 tokens 输入、8 万 tokens 输出。 A Strong and Open-source Coding LLM for Issue Resolution"
-    },
-    {
-        "company": "Google",
-        "model_name": "gemini-2.5-flash-lite-preview-06-05",
-        "update_date": "2025-06-18",
-        "features": ""
-    },
-    {
-        "company": "Moonshot",
-        "model_name": "Kimi-Research",
-        "update_date": "2025-06-20",
-        "features": ""
-    },
-    {
-        "company": "xAI",
-        "model_name": "grok4, grok4-heavy",
-        "update_date": "2025-07-10",
-        "features": ""
-    },
-    {
-        "company": "Moonshot",
-        "model_name": "Kimi-K2",
-        "update_date": "2025-07-12",
-        "features": ""
+        "model_name": "hamid1232/Qwen3-0.6B-Gensyn-Swarm-stinging_chattering_camel",
+        "update_date": "2025-08-08",
+        "features": "Tags: transformers, safetensors, qwen3, text-generation, rl-swarm",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/hamid1232/Qwen3-0.6B-Gensyn-Swarm-stinging_chattering_camel"
     },
     {
         "company": "Alibaba",
-        "model_name": "Qwen3-235B-A22B-2507",
-        "update_date": "2025-07-22",
-        "features": ""
+        "model_name": "ahmadrix333/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-tenacious_reptilian_porpoise",
+        "update_date": "2025-08-08",
+        "features": "Tags: transformers, safetensors, qwen2, text-generation, generated_from_trainer",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/ahmadrix333/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-tenacious_reptilian_porpoise"
     },
     {
-        "company": "Alibaba",
-        "model_name": "Qwen3-Coder(480B-A35B-Instruct...)",
-        "update_date": "2025-07-23",
-        "features": ""
+        "company": "Moonshot",
+        "model_name": "Thireus/Kimi-K2-Instruct-THIREUS-Q2_K_R4-SPECIAL_SPLIT",
+        "update_date": "2025-08-08",
+        "features": "Tags: gguf, arxiv:2505.23786, license:mit, endpoints_compatible, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/Thireus/Kimi-K2-Instruct-THIREUS-Q2_K_R4-SPECIAL_SPLIT"
+    },
+    {
+        "company": "Moonshot",
+        "model_name": "Thireus/Kimi-K2-Instruct-THIREUS-IQ6_K-SPECIAL_SPLIT",
+        "update_date": "2025-08-08",
+        "features": "Tags: gguf, arxiv:2505.23786, license:mit, endpoints_compatible, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/Thireus/Kimi-K2-Instruct-THIREUS-IQ6_K-SPECIAL_SPLIT"
     },
     {
         "company": "OpenAI",
@@ -112,5 +104,101 @@
         "model_name": "Genie 3",
         "update_date": "2025-08-05",
         "features": "Foundation world model that generates real-time interactive 3D environments from text prompts. Research preview."
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Qwen3-Coder(480B-A35B-Instruct...)",
+        "update_date": "2025-07-23",
+        "features": ""
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Qwen3-235B-A22B-2507",
+        "update_date": "2025-07-22",
+        "features": ""
+    },
+    {
+        "company": "Moonshot",
+        "model_name": "Kimi-K2",
+        "update_date": "2025-07-12",
+        "features": ""
+    },
+    {
+        "company": "xAI",
+        "model_name": "grok4, grok4-heavy",
+        "update_date": "2025-07-10",
+        "features": ""
+    },
+    {
+        "company": "Moonshot",
+        "model_name": "Kimi-Research",
+        "update_date": "2025-06-20",
+        "features": ""
+    },
+    {
+        "company": "Google",
+        "model_name": "gemini-2.5-flash-lite-preview-06-05",
+        "update_date": "2025-06-18",
+        "features": ""
+    },
+    {
+        "company": "Moonshot",
+        "model_name": "Kimi-Dev-72B",
+        "update_date": "2025-06-17",
+        "features": "支持全球最长的上下文窗口，包括 100 万 tokens 输入、8 万 tokens 输出。 A Strong and Open-source Coding LLM for Issue Resolution"
+    },
+    {
+        "company": "MiniMax",
+        "model_name": "MiniMax-M1-80k/40k",
+        "update_date": "2025-06-11",
+        "features": ""
+    },
+    {
+        "company": "Google",
+        "model_name": "gemini-2.5-pro-preview-06-05",
+        "update_date": "2025-06-05",
+        "features": ""
+    },
+    {
+        "company": "Deepseek",
+        "model_name": "deepseek-r1-0528",
+        "update_date": "2025-05-28",
+        "features": ""
+    },
+    {
+        "company": "Google",
+        "model_name": "gemini-2.5-flash-preview-05-20",
+        "update_date": "2025-05-20",
+        "features": ""
+    },
+    {
+        "company": "Anthropic",
+        "model_name": "claude-opus/sonnet-4-20250514",
+        "update_date": "2025-05-14",
+        "features": ""
+    },
+    {
+        "company": "Google",
+        "model_name": "gemini-2.5-pro-preview-05-06",
+        "update_date": "2025-05-06",
+        "features": ""
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Qwen3-235B-A22B",
+        "update_date": "2025-04-29",
+        "features": ""
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "o3-2025-04-16",
+        "update_date": "2025-04-16",
+        "features": ""
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "chatgpt-4o-latest-20250326",
+        "update_date": "2025-03-26",
+        "features": ""
     }
 ]
