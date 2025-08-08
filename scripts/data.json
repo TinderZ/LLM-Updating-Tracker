@@ -89,6 +89,94 @@
     },
     {
         "company": "OpenAI",
+        "model_name": "unsloth/gpt-oss-20b",
+        "update_date": "2025-08-08",
+        "features": "Tags: transformers, safetensors, gpt_oss, text-generation, vllm",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/unsloth/gpt-oss-20b"
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "mradermacher/gpt-oss-20b-i1-GGUF",
+        "update_date": "2025-08-08",
+        "features": "Tags: gguf, endpoints_compatible, region:us, imatrix, conversational",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/mradermacher/gpt-oss-20b-i1-GGUF"
+    },
+    {
+        "company": "Google",
+        "model_name": "diffusers-internal-dev/gemini-prompt-expander",
+        "update_date": "2025-08-08",
+        "features": "Tags: diffusers, custom_code, arxiv:1910.09700, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/diffusers-internal-dev/gemini-prompt-expander"
+    },
+    {
+        "company": "Meta",
+        "model_name": "M4TT1A/my-llama3-grpo-lora",
+        "update_date": "2025-08-08",
+        "features": "Tags: transformers, safetensors, unsloth, arxiv:1910.09700, endpoints_compatible",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/M4TT1A/my-llama3-grpo-lora"
+    },
+    {
+        "company": "Meta",
+        "model_name": "kmfoda/llama-1b-miner-2",
+        "update_date": "2025-08-08",
+        "features": "Tags: safetensors, llama, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/kmfoda/llama-1b-miner-2"
+    },
+    {
+        "company": "DeepSeek",
+        "model_name": "q10108158/DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M-GGUF",
+        "update_date": "2025-08-08",
+        "features": "Tags: gguf, llama-cpp, gguf-my-repo, base_model:deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct, base_model:quantized:deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/q10108158/DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M-GGUF"
+    },
+    {
+        "company": "DeepSeek",
+        "model_name": "HangHor/deepseek_7b_herald_sft",
+        "update_date": "2025-08-08",
+        "features": "Tags: safetensors, llama, license:mit, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/HangHor/deepseek_7b_herald_sft"
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "MaxVell337/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-flapping_foraging_walrus",
+        "update_date": "2025-08-08",
+        "features": "Tags: transformers, safetensors, qwen2, text-generation, generated_from_trainer",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/MaxVell337/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-flapping_foraging_walrus"
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "wuyanzu4692/task-13-Qwen-Qwen2.5-1.5B-Instruct",
+        "update_date": "2025-08-08",
+        "features": "Tags: peft, safetensors, arxiv:1910.09700, base_model:Qwen/Qwen2.5-1.5B-Instruct, base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/wuyanzu4692/task-13-Qwen-Qwen2.5-1.5B-Instruct"
+    },
+    {
+        "company": "Moonshot",
+        "model_name": "Thireus/Kimi-K2-Instruct-THIREUS-IQ2_BN_R4-SPECIAL_SPLIT",
+        "update_date": "2025-08-08",
+        "features": "Tags: gguf, arxiv:2505.23786, license:mit, endpoints_compatible, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/Thireus/Kimi-K2-Instruct-THIREUS-IQ2_BN_R4-SPECIAL_SPLIT"
+    },
+    {
+        "company": "Moonshot",
+        "model_name": "Thireus/Kimi-K2-Instruct-THIREUS-IQ2_BN-SPECIAL_SPLIT",
+        "update_date": "2025-08-08",
+        "features": "Tags: gguf, arxiv:2505.23786, license:mit, endpoints_compatible, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/Thireus/Kimi-K2-Instruct-THIREUS-IQ2_BN-SPECIAL_SPLIT"
+    },
+    {
+        "company": "OpenAI",
         "model_name": "gpt-oss-120b, gpt-oss-20b",
         "update_date": "2025-08-05",
         "features": "Open-weight reasoning models (Apache 2.0 license). gpt-oss-120b (117B params) and gpt-oss-20b (21B params)."
