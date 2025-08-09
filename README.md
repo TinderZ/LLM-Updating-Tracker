@@ -3,12 +3,13 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2025-08-07*
+*Last updated: 2025-08-09*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
+| OpenAI | gpt-5, gpt-5-pro | 2025-08-08 | GPT-5 是一个一体化系统，包含三个核心部分：一个智能高效的基础模型，可解答大多数问题；一个深度推理模型（即GPT-5思维模块），用于处理更复杂的难题；以及一个实时路由模块，能够基于对话类型、问题复杂度、工具需求及用户显式指令（如prompt含“仔细思考这个问题”）智能调度模型。 |
 | OpenAI | gpt-oss-120b, gpt-oss-20b | 2025-08-05 | Open-weight reasoning models (Apache 2.0 license). gpt-oss-120b (117B params) and gpt-oss-20b (21B params). |
 | Anthropic | Claude Opus 4.1 | 2025-08-05 | Drop-in replacement for Opus 4, with hybrid reasoning and extended thinking. |
 | Google DeepMind | Genie 3 | 2025-08-05 | Foundation world model that generates real-time interactive 3D environments from text prompts. Research preview. |
