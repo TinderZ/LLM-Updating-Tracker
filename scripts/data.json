@@ -1,6 +1,78 @@
 [
     {
         "company": "OpenAI",
+        "model_name": "Alphatao/Affine-gptoss120b",
+        "update_date": "2025-08-09",
+        "features": "Tags: transformers, safetensors, gpt_oss, text-generation, vllm",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/Alphatao/Affine-gptoss120b"
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "Alizabethli/Qwen32_SFT_RL_gpt",
+        "update_date": "2025-08-09",
+        "features": "Tags: transformers, safetensors, generated_from_trainer, grpo, trl",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/Alizabethli/Qwen32_SFT_RL_gpt"
+    },
+    {
+        "company": "Meta",
+        "model_name": "STR-NaN/llama-1b-hot-10",
+        "update_date": "2025-08-09",
+        "features": "Tags: safetensors, llama, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/STR-NaN/llama-1b-hot-10"
+    },
+    {
+        "company": "Meta",
+        "model_name": "STR-NaN/llama-1b-hot-7",
+        "update_date": "2025-08-09",
+        "features": "Tags: safetensors, llama, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/STR-NaN/llama-1b-hot-7"
+    },
+    {
+        "company": "DeepSeek",
+        "model_name": "abhi7042/deepseek",
+        "update_date": "2025-08-09",
+        "features": "Tags: region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/abhi7042/deepseek"
+    },
+    {
+        "company": "DeepSeek",
+        "model_name": "hdong0/deepseek-Qwen2.5-7B-baseline-thin-Open-R1-GRPO_deepscaler_acc_mu_8_constant_lr",
+        "update_date": "2025-08-09",
+        "features": "Tags: safetensors, qwen2bm, custom_code, region:us",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/hdong0/deepseek-Qwen2.5-7B-baseline-thin-Open-R1-GRPO_deepscaler_acc_mu_8_constant_lr"
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Kei-Sanada/task-13-Qwen-Qwen2.5-0.5B-Instruct",
+        "update_date": "2025-08-09",
+        "features": "Tags: peft, safetensors, arxiv:1910.09700, base_model:Qwen/Qwen2.5-0.5B-Instruct, base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/Kei-Sanada/task-13-Qwen-Qwen2.5-0.5B-Instruct"
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "gf43hhd/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-armored_zealous_giraffe",
+        "update_date": "2025-08-09",
+        "features": "Tags: transformers, safetensors, qwen2, text-generation, generated_from_trainer",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/gf43hhd/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-armored_zealous_giraffe"
+    },
+    {
+        "company": "Moonshot",
+        "model_name": "luisra/Kimi-K2-Instruct-4bit",
+        "update_date": "2025-08-09",
+        "features": "Tags: transformers, safetensors, deepseek_v3, text-generation, unsloth",
+        "source": "Hugging Face",
+        "link": "https://huggingface.co/luisra/Kimi-K2-Instruct-4bit"
+    },
+    {
+        "company": "OpenAI",
         "model_name": "OpenAI Model v1.99.3",
         "update_date": "2025-08-08",
         "features": "## 1.99.3 (2025-08-07)\n\nFull Changelog: [v1.99.2...v1.99.3](https://github.com/openai/openai-python/compare/v1.99.2...v1.99.3)\n\n### Bug Fixes\n\n* **responses:** add output_text back ([585a4f1](https://github.com/openai/openai-python/commit/585a4f15e5a088bf8afee745bc4a7803775ac283))",
