@@ -5,7 +5,6 @@ from datetime import datetime, timedelta
 from dateutil import parser
 import re
 import time
-from huggingface_hub import HfApi
 from bs4 import BeautifulSoup
 
 # --- 配置区 ---
@@ -66,7 +65,6 @@ class IntelligentModelTracker:
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         })
-        self.hf_api = HfApi()
         
     def load_existing_data(self):
         """加载现有数据"""
@@ -95,84 +93,41 @@ class IntelligentModelTracker:
             print(f"获取GitHub发布信息失败: {repo_url}, 错误: {e}")
         return []
     
-    def fetch_huggingface_models(self, company_keywords):
-        """从Hugging Face获取最新模型"""
-        try:
-            # 搜索最近更新的模型
-            models = []
-            for keyword in company_keywords:
-                try:
-                    search_results = self.hf_api.list_models(
-                        search=keyword,
-                        sort="lastModified",
-                        direction=-1,
-                        limit=10
-                    )
-                    models.extend(list(search_results))
-                except Exception as e:
-                    print(f"搜索Hugging Face模型失败: {keyword}, 错误: {e}")
-                    continue
-            return models
-        except Exception as e:
-            print(f"获取Hugging Face模型失败: {e}")
-        return []
-    
     def extract_model_info_from_github(self, release, company):
         """从GitHub发布信息中提取模型信息"""
         try:
             # 解析发布日期
             published_at = parser.parse(release['published_at']).strftime('%Y-%m-%d')
             
-            # 提取模型名称（从tag_name或name）
-            model_name = release.get('tag_name', release.get('name', 'Unknown'))
+            # 提取模型名称（从name或tag_name）
+            model_name = release.get('name', release.get('tag_name', 'Unknown'))
+
+            # 如果模型名称仅仅是版本号，则跳过
+            if re.fullmatch(r'v?(\d+\.)*\d+', model_name):
+                return None
             
             # 清理模型名称
-            model_name = re.sub(r'^v?(\d+\.)*\d+', '', model_name).strip('-').strip()
-            if not model_name:
-                model_name = f"{company} Model {release.get('tag_name', 'Unknown')}"
+            cleaned_model_name = re.sub(r'^v?(\d+\.)*\d+', '', model_name).strip('-').strip()
             
+            if not cleaned_model_name:
+                cleaned_model_name = model_name
+
             # 提取特性描述
             features = release.get('body', '')[:500]  # 限制长度
+
+            # 检查标题或特性描述是否包含关键字，增加相关性
+            title_and_features = f"{cleaned_model_name} {features}"
+            if not any(keyword.lower() in title_and_features.lower() for keyword in MODEL_PATTERNS[company]['keywords']):
+                 return None
             
             return {
                 "company": company,
-                "model_name": model_name,
+                "model_name": cleaned_model_name,
                 "update_date": published_at,
                 "features": features,
-                "source": "GitHub",
-                "link": release.get('html_url', '')
             }
         except Exception as e:
             print(f"解析GitHub发布信息失败: {e}")
-        return None
-    
-    def extract_model_info_from_hf(self, model, company):
-        """从Hugging Face模型信息中提取模型信息"""
-        try:
-            # 获取模型的最后修改时间
-            if hasattr(model, 'lastModified') and model.lastModified:
-                update_date = model.lastModified.strftime('%Y-%m-%d')
-            else:
-                update_date = datetime.now().strftime('%Y-%m-%d')
-            
-            # 获取模型名称
-            model_name = model.modelId
-            
-            # 获取模型描述
-            features = ""
-            if hasattr(model, 'tags') and model.tags:
-                features = f"Tags: {', '.join(model.tags[:5])}"
-            
-            return {
-                "company": company,
-                "model_name": model_name,
-                "update_date": update_date,
-                "features": features,
-                "source": "Hugging Face",
-                "link": f"https://huggingface.co/{model.modelId}"
-            }
-        except Exception as e:
-            print(f"解析Hugging Face模型信息失败: {e}")
         return None
     
     def is_today_update(self, update_date):
@@ -187,10 +142,6 @@ class IntelligentModelTracker:
     def is_duplicate(self, new_item, existing_data):
         """检查是否为重复数据"""
         for item in existing_data:
-            # 检查链接是否相同
-            if new_item.get('link') and item.get('link') == new_item['link']:
-                return True
-            
             # 检查模型名称和公司是否相同
             if (item.get('company') == new_item.get('company') and 
                 item.get('model_name') == new_item.get('model_name')):
@@ -231,8 +182,6 @@ class IntelligentModelTracker:
                                         "model_name": entry.title,
                                         "update_date": update_date,
                                         "features": entry.get('summary', '')[:300],
-                                        "source": "Official RSS",
-                                        "link": entry.link
                                     })
                                     print(f"    ✅ 发现今日官方发布: {entry.title}")
                 except Exception as e:
@@ -270,23 +219,6 @@ class IntelligentModelTracker:
                         not self.is_duplicate(model_info, existing_data + new_updates)):
                         new_updates.append(model_info)
                         print(f"    ✅ 发现今日GitHub发布: {model_info['model_name']}")
-        
-        # 3. 从Hugging Face获取更新（只检查今天上传的）
-        print("\n🤗 正在从Hugging Face获取今日更新...")
-        for company, info in MODEL_PATTERNS.items():
-            print(f"  正在检查 {company} HuggingFace...")
-            models = self.fetch_huggingface_models(info['keywords'])
-            today_count = 0
-            for model in models:
-                if today_count >= 2:  # 每个公司最多检查2个今日模型
-                    break
-                model_info = self.extract_model_info_from_hf(model, company)
-                if (model_info and 
-                    self.is_today_update(model_info['update_date']) and
-                    not self.is_duplicate(model_info, existing_data + new_updates)):
-                    new_updates.append(model_info)
-                    today_count += 1
-                    print(f"    ✅ 发现今日HF模型: {model_info['model_name']}")
         
         # 4. 保存更新
         if new_updates:

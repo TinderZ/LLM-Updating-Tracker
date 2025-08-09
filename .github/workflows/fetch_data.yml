@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -33,7 +35,9 @@ jobs:
           # 为API调用设置环境变量（如果需要）
           PYTHONPATH: ${{ github.workspace }}
 
-      - name: Commit and push if data changed
+      - name: Create Pull Request if data changed
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -41,6 +45,9 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
+            BRANCH_NAME="auto-update/$(date +'%Y-%m-%d-%H-%M-%S')"
+            git checkout -b $BRANCH_NAME
             git commit -m "feat: 🤖 auto-update AI model data - $(date +'%Y-%m-%d')"
-            git push
+            git push --set-upstream origin $BRANCH_NAME
+            gh pr create --base main --head $BRANCH_NAME --title "feat: 🤖 auto-update AI model data - $(date +'%Y-%m-%d')" --body "This is an auto-generated PR with the latest model updates."
           fi
