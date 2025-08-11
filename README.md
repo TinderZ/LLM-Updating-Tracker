@@ -3,7 +3,7 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2025-08-10*
+*Last updated: 2025-08-11*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
