@@ -1,5 +1,11 @@
 [
     {
+        "company": "ZhipuAI",
+        "model_name": "GLM-4.5V",
+        "update_date": "2025-08-11",
+        "features": "GLM-4.5V 是智谱新一代基于 MOE 架构的视觉推理模型，以106B的总参数量和12B激活参数量，在各类基准测试中达到全球同级别开源多模态模型 SOTA，涵盖图像、视频、文档理解及 GUI 任务等常见任务。"
+    },
+    {
         "company": "OpenAI",
         "model_name": "gpt-5, gpt-5-pro",
         "update_date": "2025-08-08",
@@ -22,6 +28,12 @@
         "model_name": "Genie 3",
         "update_date": "2025-08-05",
         "features": "Foundation world model that generates real-time interactive 3D environments from text prompts. Research preview."
+    },
+    {
+        "company": "ZhipuAI",
+        "model_name": "GLM-4.5, GLM-4.5-Air",
+        "update_date": "2025-07-28",
+        "features": "混合推理模型，提供：用于复杂推理和工具使用的思考模式，以及用于即时响应的非思考模式。"
     },
     {
         "company": "Alibaba",
