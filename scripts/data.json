@@ -1,5 +1,11 @@
 [
     {
+        "company": "Deepseek",
+        "model_name": "deepseek-V3.1",
+        "update_date": "2025-08-19",
+        "features": "Deepseek线上模型版本更新。"
+    },
+    {
         "company": "ZhipuAI",
         "model_name": "GLM-4.5V",
         "update_date": "2025-08-11",
