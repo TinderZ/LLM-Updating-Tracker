@@ -3,13 +3,13 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2025-08-20*
+*Last updated: 2025-08-21*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
-| Deepseek | deepseek-V3.1 | 2025-08-19 | Deepseek线上模型版本更新。 |
+| Deepseek | deepseek-V3.1, deepseek-V3.1-Base | 2025-08-19 | DeepSeek-V3.1 是一种混合模型，支持思考模式和非思考模式。与上一版本相比，此次升级在多个方面带来了改进：1.混合思考模式：通过改变聊天模板，一个模型即可支持思考模式和非思考模式。2.更智能的工具调用：通过后训练优化，模型在工具使用和代理任务方面的性能显著提升。3.更高的思考效率：DeepSeek-V3.1-Think 实现了与 DeepSeek-R1-0528 相当的答案质量，同时响应速度更快。DeepSeek-V3.1 在 DeepSeek-V3.1-Base 的基础上进行了后训练，DeepSeek-V3.1-Base 是基于原始 V3 基础检查点，通过两阶段长上下文扩展方法构建的，遵循了原始 DeepSeek-V3 报告中概述的方法。 |
 | ZhipuAI | GLM-4.5V | 2025-08-11 | GLM-4.5V 是智谱新一代基于 MOE 架构的视觉推理模型，以106B的总参数量和12B激活参数量，在各类基准测试中达到全球同级别开源多模态模型 SOTA，涵盖图像、视频、文档理解及 GUI 任务等常见任务。 |
 | OpenAI | gpt-5, gpt-5-pro | 2025-08-08 | GPT-5 是一个一体化系统，包含三个核心部分：一个智能高效的基础模型，可解答大多数问题；一个深度推理模型（即GPT-5思维模块），用于处理更复杂的难题；以及一个实时路由模块，能够基于对话类型、问题复杂度、工具需求及用户显式指令（如prompt含“仔细思考这个问题”）智能调度模型。 |
 | OpenAI | gpt-oss-120b, gpt-oss-20b | 2025-08-05 | Open-weight reasoning models (Apache 2.0 license). gpt-oss-120b (117B params) and gpt-oss-20b (21B params). |
