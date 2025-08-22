@@ -1,5 +1,11 @@
 [
     {
+        "company": "ByteDance",
+        "model_name": "Seed-OSS-36B-Base, Seed-OSS-36B-Base2, Seed-OSS-36B-Instruct",
+        "update_date": "2025-08-21",
+        "features": "开源"
+    },
+    {
         "company": "Deepseek",
         "model_name": "deepseek-V3.1, deepseek-V3.1-Base",
         "update_date": "2025-08-19",
