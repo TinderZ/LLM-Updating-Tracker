@@ -1,3 +1,6 @@
+![LLM Model Development Timeline](LLM模型路线图.png)  
+*Image source: [A Survey of Reinforcement Learning for Large Reasoning Models](https://arxiv.org/abs/2509.08827)*
+
 # LLM Model Updates Tracker (Keep Updating~)
 
 A tracker for the latest updates on Large Language Models from various companies.
