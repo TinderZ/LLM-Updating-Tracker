@@ -1,5 +1,11 @@
 [
     {
+        "company": "OpenAI",
+        "model_name": "GPT-5-Codex",
+        "update_date": "2025-09-16",
+        "features": "GPT-5-Codex 重点优化了在真实工程场景中的自主式（agentic）软件工程能力。它既能在短时间的交互式会话中快速响应，也能独立完成冗长复杂的任务。它的代码审查（code review）能力可以在代码上线前发现关键漏洞。"
+    },
+    {
         "company": "ByteDance",
         "model_name": "Seed-OSS-36B-Base, Seed-OSS-36B-Base2, Seed-OSS-36B-Instruct",
         "update_date": "2025-08-21",
