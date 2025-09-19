@@ -6,12 +6,14 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2025-09-17*
+*Last updated: 2025-09-19*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
+| Alibaba | [![Blog](https://img.shields.io/badge/Blog-技术博客-blue?style=flat-square&logo=blogger)](https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/) Tongyi-DeepResearch | 2025-09-16 | 我们自豪地推出通义 DeepResearch——首个性能全面对标 OpenAI DeepResearch 的开源 Web 智能体。在各项综合性基准测试中，通义 DeepResearch 展现出sota水平 |
+| Tencent |  PromptEnhancer-32B, PromptEnhancer-7B | 2025-09-16 | Hunyuan-PromptEnhancer is a prompt rewriting utility. It restructures an input prompt while preserving the original intent, producing clearer, layered, and logically consistent prompts suitable for downstream image generation or similar tasks. |
 | OpenAI | GPT-5-Codex | 2025-09-16 | GPT-5-Codex 重点优化了在真实工程场景中的自主式（agentic）软件工程能力。它既能在短时间的交互式会话中快速响应，也能独立完成冗长复杂的任务。它的代码审查（code review）能力可以在代码上线前发现关键漏洞。 |
 | ByteDance | Seed-OSS-36B-Base, Seed-OSS-36B-Base2, Seed-OSS-36B-Instruct | 2025-08-21 | 开源 |
 | Deepseek | deepseek-V3.1, deepseek-V3.1-Base | 2025-08-19 | DeepSeek-V3.1 是一种混合模型，支持思考模式和非思考模式。与上一版本相比，此次升级在多个方面带来了改进：1.混合思考模式：通过改变聊天模板，一个模型即可支持思考模式和非思考模式。2.更智能的工具调用：通过后训练优化，模型在工具使用和代理任务方面的性能显著提升。3.更高的思考效率：DeepSeek-V3.1-Think 实现了与 DeepSeek-R1-0528 相当的答案质量，同时响应速度更快。DeepSeek-V3.1 在 DeepSeek-V3.1-Base 的基础上进行了后训练，DeepSeek-V3.1-Base 是基于原始 V3 基础检查点，通过两阶段长上下文扩展方法构建的，遵循了原始 DeepSeek-V3 报告中概述的方法。 |
