@@ -1,5 +1,20 @@
 [
     {
+        "company": "Alibaba",
+        "model_name": "Tongyi-DeepResearch",
+        "update_date": "2025-09-16",
+        "blog_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/",
+        "features": "我们自豪地推出通义 DeepResearch——首个性能全面对标 OpenAI DeepResearch 的开源 Web 智能体。在各项综合性基准测试中，通义 DeepResearch 展现出sota水平"
+        
+    },
+    {
+        "company": "Tencent",
+        "model_name": " PromptEnhancer-32B, PromptEnhancer-7B",
+        "update_date": "2025-09-16",
+        "blog_url": "https://hunyuan-promptenhancer.github.io/",
+        "features": "Hunyuan-PromptEnhancer is a prompt rewriting utility. It restructures an input prompt while preserving the original intent, producing clearer, layered, and logically consistent prompts suitable for downstream image generation or similar tasks."
+    },
+    {
         "company": "OpenAI",
         "model_name": "GPT-5-Codex",
         "update_date": "2025-09-16",

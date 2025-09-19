@@ -19,7 +19,15 @@ def generate_readme(data_path, readme_path):
     table_content += "| :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |\n"
     for item in data:
         display_date = datetime.strptime(item['update_date'], '%Y-%m-%d').strftime('%Y-%m-%d')
-        table_content += f"| {item['company']} | {item['model_name']} | {display_date} | {item.get('features', '')} |\n"
+        
+        # Check if there's a blog_url and add badge under company name
+        company_name = item['company']
+        if 'blog_url' in item and item['blog_url']:
+            # Create a blog badge that links to the technical blog
+            badge_url = f"https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger"
+            company_name = f"{item['company']}<br/>[![Blog]({badge_url})]({item['blog_url']})"
+        
+        table_content += f"| {company_name} | {item['model_name']} | {display_date} | {item.get('features', '')} |\n"
 
     # --- Update README.md ---
 
