@@ -1,5 +1,12 @@
 [
     {
+        "company": "Deepseek",
+        "model_name": "DeepSeek-V3.1-Terminus",
+        "update_date": "2025-09-22",
+        "blog_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
+        "features": "深度求索（DeepSeek）刚刚发布了一个新模型：DeepSeek-V3.1-Terminus。本次升级基于 DeepSeek-V3.1，并做出了两项重大改进：1.语言一致性：缓解了中英文混杂、偶发异常字符等情况；比如我们之前的「极」字现象。 2.Agent 能力：进一步优化了 Code Agent 与 Search Agent 的表现。"
+    },
+    {
         "company": "Alibaba",
         "model_name": "Tongyi-DeepResearch",
         "update_date": "2025-09-16",
