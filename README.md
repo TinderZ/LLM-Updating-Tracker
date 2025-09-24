@@ -6,12 +6,13 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2025-09-19*
+*Last updated: 2025-09-24*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
+| Deepseek<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus) | DeepSeek-V3.1-Terminus | 2025-09-22 | 深度求索（DeepSeek）刚刚发布了一个新模型：DeepSeek-V3.1-Terminus。本次升级基于 DeepSeek-V3.1，并做出了两项重大改进：1.语言一致性：缓解了中英文混杂、偶发异常字符等情况；比如我们之前的「极」字现象。 2.Agent 能力：进一步优化了 Code Agent 与 Search Agent 的表现。 |
 | Alibaba<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/) | Tongyi-DeepResearch | 2025-09-16 | 我们自豪地推出通义 DeepResearch——首个性能全面对标 OpenAI DeepResearch 的开源 Web 智能体。在各项综合性基准测试中，通义 DeepResearch 展现出sota水平。 |
 | Tencent<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://hunyuan-promptenhancer.github.io/) |  PromptEnhancer-32B, PromptEnhancer-7B | 2025-09-16 | Hunyuan-PromptEnhancer is a prompt rewriting utility. It restructures an input prompt while preserving the original intent, producing clearer, layered, and logically consistent prompts suitable for downstream image generation or similar tasks. |
 | OpenAI | GPT-5-Codex | 2025-09-16 | GPT-5-Codex 重点优化了在真实工程场景中的自主式（agentic）软件工程能力。它既能在短时间的交互式会话中快速响应，也能独立完成冗长复杂的任务。它的代码审查（code review）能力可以在代码上线前发现关键漏洞。 |
