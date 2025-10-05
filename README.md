@@ -6,13 +6,18 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2025-09-24*
+*Last updated: 2025-10-05*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
-| Deepseek<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus) | DeepSeek-V3.1-Terminus | 2025-09-22 | 深度求索（DeepSeek）刚刚发布了一个新模型：DeepSeek-V3.1-Terminus。本次升级基于 DeepSeek-V3.1，并做出了两项重大改进：1.语言一致性：缓解了中英文混杂、偶发异常字符等情况；比如我们之前的「极」字现象。 2.Agent 能力：进一步优化了 Code Agent 与 Search Agent 的表现。 |
+| OpenAI | Sora2 | 2025-10-01 | Sora2 正式发布, 用于生成短视频。 |
+| Anthropic<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://www.anthropic.com/news/claude-sonnet-4-5) | Claude-4.5-Sonnet | 2025-09-30 | Claude Sonnet 4.5 is the best coding model in the world. It's the strongest model for building complex agents. It’s the best model at using computers. And it shows substantial gains in reasoning and math. |
+| ZhipuAI | GLM-4.6 | 2025-09-30 | 前脚DeepSeek更新到了V3.2，现在智谱又更新了——正式推出GLM-4.6，代码能力直接推到了国内最强。 |
+| DeepSeek<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp/blob/main/DeepSeek_V3_2.pdf) | DeepSeek-V3.2-Exp | 2025-09-29 | 假期前一天，熟悉的节奏。 |
+| Alibaba<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://qwen.ai/research) | Qwen3-VL-235B-A22B，Qwen3-Coder-Plus，Qwen3-LiveTranslate-Flash，Qwen3-Max，Qwen3Guard，Qwen3-Omni，Qwen3-Image-Edit，... | 2025-09-24 | Qwen3全家桶发布。 |
+| Deepseek<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus) | DeepSeek-V3.1-Terminus | 2025-09-22 | 深度求索（DeepSeek）刚刚发布了一个新模型：DeepSeek-V3.1-Terminus。本次升级基于 DeepSeek-V3.1，并做出了两项重大改进：1.语言一致性：缓解了中英文混杂、偶发异常字符等情况；比如之前的「极」字现象。 2.Agent 能力：进一步优化了 Code Agent 与 Search Agent 的表现。 |
 | Alibaba<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/) | Tongyi-DeepResearch | 2025-09-16 | 我们自豪地推出通义 DeepResearch——首个性能全面对标 OpenAI DeepResearch 的开源 Web 智能体。在各项综合性基准测试中，通义 DeepResearch 展现出sota水平。 |
 | Tencent<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://hunyuan-promptenhancer.github.io/) |  PromptEnhancer-32B, PromptEnhancer-7B | 2025-09-16 | Hunyuan-PromptEnhancer is a prompt rewriting utility. It restructures an input prompt while preserving the original intent, producing clearer, layered, and logically consistent prompts suitable for downstream image generation or similar tasks. |
 | OpenAI | GPT-5-Codex | 2025-09-16 | GPT-5-Codex 重点优化了在真实工程场景中的自主式（agentic）软件工程能力。它既能在短时间的交互式会话中快速响应，也能独立完成冗长复杂的任务。它的代码审查（code review）能力可以在代码上线前发现关键漏洞。 |
