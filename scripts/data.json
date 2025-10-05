@@ -1,10 +1,45 @@
 [
     {
+        "company": "OpenAI",
+        "model_name": "Sora2",
+        "update_date": "2025-10-1",
+        "blog_url": "",
+        "features": "Sora2 正式发布, 用于生成短视频。"
+    },
+    {
+        "company": "Anthropic",
+        "model_name": "Claude-4.5-Sonnet",
+        "update_date": "2025-09-30",
+        "blog_url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "features": "Claude Sonnet 4.5 is the best coding model in the world. It's the strongest model for building complex agents. It’s the best model at using computers. And it shows substantial gains in reasoning and math."
+    },
+    {
+        "company": "ZhipuAI",
+        "model_name": "GLM-4.6",
+        "update_date": "2025-09-30",
+        "blog_url": "",
+        "features": "前脚DeepSeek更新到了V3.2，现在智谱又更新了——正式推出GLM-4.6，代码能力直接推到了国内最强。"
+    },
+    {
+        "company": "DeepSeek",
+        "model_name": "DeepSeek-V3.2-Exp",
+        "update_date": "2025-09-29",
+        "blog_url": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp/blob/main/DeepSeek_V3_2.pdf",
+        "features": "假期前一天，熟悉的节奏。"
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Qwen3-VL-235B-A22B，Qwen3-Coder-Plus，Qwen3-LiveTranslate-Flash，Qwen3-Max，Qwen3Guard，Qwen3-Omni，Qwen3-Image-Edit，...",
+        "update_date": "2025-09-24",
+        "blog_url": "https://qwen.ai/research",
+        "features": "Qwen3全家桶发布。"
+    },
+    {
         "company": "Deepseek",
         "model_name": "DeepSeek-V3.1-Terminus",
         "update_date": "2025-09-22",
         "blog_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
-        "features": "深度求索（DeepSeek）刚刚发布了一个新模型：DeepSeek-V3.1-Terminus。本次升级基于 DeepSeek-V3.1，并做出了两项重大改进：1.语言一致性：缓解了中英文混杂、偶发异常字符等情况；比如我们之前的「极」字现象。 2.Agent 能力：进一步优化了 Code Agent 与 Search Agent 的表现。"
+        "features": "深度求索（DeepSeek）刚刚发布了一个新模型：DeepSeek-V3.1-Terminus。本次升级基于 DeepSeek-V3.1，并做出了两项重大改进：1.语言一致性：缓解了中英文混杂、偶发异常字符等情况；比如之前的「极」字现象。 2.Agent 能力：进一步优化了 Code Agent 与 Search Agent 的表现。"
     },
     {
         "company": "Alibaba",
@@ -12,7 +47,6 @@
         "update_date": "2025-09-16",
         "blog_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/",
         "features": "我们自豪地推出通义 DeepResearch——首个性能全面对标 OpenAI DeepResearch 的开源 Web 智能体。在各项综合性基准测试中，通义 DeepResearch 展现出sota水平。"
-        
     },
     {
         "company": "Tencent",
