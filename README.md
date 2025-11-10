@@ -6,12 +6,13 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2025-10-13*
+*Last updated: 2025-11-10*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
+| Moonshot<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://kimi-k2.org/zh/blog/15-kimi-k2-thinking-zh) | Kimi-K2-Thinking | 2025-11-07 | 第一代原生支持"边思考，边使用工具"的Thinking Agent，标志着开源AI推理模型的重大突破，将进一步缩小与闭源顶级模型的性能差距。 |
 | OpenAI | Sora2 | 2025-10-01 | Sora2 正式发布, 用于生成短视频。 |
 | Anthropic<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://www.anthropic.com/news/claude-sonnet-4-5) | Claude-4.5-Sonnet | 2025-09-30 | Claude Sonnet 4.5 is the best coding model in the world. It's the strongest model for building complex agents. It’s the best model at using computers. And it shows substantial gains in reasoning and math. |
 | ZhipuAI | GLM-4.6 | 2025-09-30 | 前脚DeepSeek更新到了V3.2，现在智谱又更新了——正式推出GLM-4.6，代码能力直接推到了国内最强。 |
