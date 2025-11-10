@@ -1,5 +1,12 @@
 [
     {
+        "company": "Moonshot",
+        "model_name": "Kimi-K2-Thinking",
+        "update_date": "2025-11-7",
+        "blog_url": "https://kimi-k2.org/zh/blog/15-kimi-k2-thinking-zh",
+        "features": "第一代原生支持\"边思考，边使用工具\"的Thinking Agent，标志着开源AI推理模型的重大突破，将进一步缩小与闭源顶级模型的性能差距。"
+    },
+    {
         "company": "OpenAI",
         "model_name": "Sora2",
         "update_date": "2025-10-1",
