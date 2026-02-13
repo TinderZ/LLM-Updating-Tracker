@@ -261,9 +261,11 @@ function renderModelCard(item) {
             onerror="this.outerHTML='<span class=\\'card-company-icon-placeholder\\' style=\\'background:${meta.color}\\'>${normalized.charAt(0)}</span>'">`
         : `<span class="card-company-icon-placeholder" style="background:${meta.color}">${normalized.charAt(0)}</span>`;
 
-    // Features
-    const features = item.features
-        ? `<p class="card-features">${escapeHtml(item.features)}</p>`
+    // Features (bilingual)
+    const featuresKey = i18n.lang === 'zh' ? 'features_zh' : 'features_en';
+    const featuresText = item[featuresKey] || item.features_zh || item.features_en || item.features || '';
+    const features = featuresText
+        ? `<p class="card-features">${escapeHtml(featuresText)}</p>`
         : '';
 
     // Blog link

@@ -27,7 +27,8 @@ def generate_readme(data_path, readme_path):
             badge_url = f"https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger"
             company_name = f"{item['company']}<br/>[![Blog]({badge_url})]({item['blog_url']})"
         
-        table_content += f"| {company_name} | {item['model_name']} | {display_date} | {item.get('features', '')} |\n"
+        features = item.get('features_zh', '') or item.get('features_en', '') or item.get('features', '')
+        table_content += f"| {company_name} | {item['model_name']} | {display_date} | {features} |\n"
 
     # --- Update README.md ---
 
@@ -57,7 +58,7 @@ def generate_readme(data_path, readme_path):
 
 if __name__ == '__main__':
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    data_file = os.path.join(script_dir, 'data.json')
+    data_file = os.path.join(script_dir, '..', 'docs', 'data.json')
     readme_file = os.path.join(script_dir, '..', 'README.md')
     generate_readme(data_file, readme_file)
     print("README.md has been updated successfully.")

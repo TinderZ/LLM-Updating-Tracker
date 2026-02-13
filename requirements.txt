@@ -2,4 +2,5 @@ feedparser
 requests
 beautifulsoup4
 python-dateutil
-huggingface_hub
+openai
+python-dotenv

@@ -32,11 +32,10 @@ jobs:
       - name: Fetch latest model updates
         run: python scripts/fetch_updates.py
         env:
-          # 为API调用设置环境变量（如果需要）
           PYTHONPATH: ${{ github.workspace }}
-
-      - name: Sync data to docs for GitHub Pages
-        run: cp scripts/data.json docs/data.json
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
 
       - name: Create Pull Request if data changed
         env:
@@ -44,7 +43,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add scripts/data.json docs/data.json
+          git add docs/data.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
