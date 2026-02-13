@@ -23,7 +23,7 @@ MODEL_PATTERNS = {
         "official_sites": ["https://www.anthropic.com/news.rss"]
     },
     "Google": {
-        "keywords": ["gemini", "bard", "palm", "lamda", "pathways"],
+        "keywords": ["gemini", "palm", "lamda", "pathways"],
         "api_endpoints": ["https://api.github.com/repos/google/generative-ai-python/releases"],
         "official_sites": ["https://blog.google/technology/ai/rss/"]
     },
@@ -124,6 +124,8 @@ class IntelligentModelTracker:
                 "company": company,
                 "model_name": cleaned_model_name,
                 "update_date": published_at,
+                "blog_url": "",
+                "license_type": "unknown",
                 "features": features,
             }
         except Exception as e:
@@ -181,6 +183,8 @@ class IntelligentModelTracker:
                                         "company": company,
                                         "model_name": entry.title,
                                         "update_date": update_date,
+                                        "blog_url": entry.get('link', ''),
+                                        "license_type": "unknown",
                                         "features": entry.get('summary', '')[:300],
                                     })
                                     print(f"    ✅ 发现今日官方发布: {entry.title}")

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Model Updates Tracker</title>
+    <meta name="description" content="Track the latest Large Language Model releases from top AI companies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Dot-grid background -->
+    <div class="bg-grid"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner container">
+            <div class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <h1 class="logo-text" data-i18n="title">LLM Model Updates Tracker</h1>
+            </div>
+            <div class="header-actions">
+                <button id="langToggle" class="btn-icon" title="Switch Language">
+                    <span class="lang-label">EN</span>
+                </button>
+                <button id="themeToggle" class="btn-icon" title="Toggle Theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats -->
+    <section class="stats-section container">
+        <div class="stat-card">
+            <span class="stat-number" id="statCompanies">0</span>
+            <span class="stat-label" data-i18n="statsCompanies">追踪厂商</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number" id="statModels">0</span>
+            <span class="stat-label" data-i18n="statsModels">模型总数</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number" id="statLatest">-</span>
+            <span class="stat-label" data-i18n="statsLatest">最新更新</span>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters-section container">
+        <!-- License filter -->
+        <div class="filter-group">
+            <span class="filter-title" data-i18n="filterLicense">许可类型</span>
+            <div class="license-filters">
+                <button class="license-btn active" data-license="all" data-i18n="filterAll">全部</button>
+                <button class="license-btn" data-license="open_source">
+                    <span class="license-dot open"></span>
+                    <span data-i18n="filterOpen">开源</span>
+                </button>
+                <button class="license-btn" data-license="closed_source">
+                    <span class="license-dot closed"></span>
+                    <span data-i18n="filterClosed">闭源</span>
+                </button>
+            </div>
+        </div>
+        <!-- Company filter -->
+        <div class="filter-group">
+            <span class="filter-title" data-i18n="filterCompany">厂商筛选</span>
+            <div class="company-filters" id="companyFilters">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <main class="timeline-section container">
+        <div class="timeline" id="timeline">
+            <!-- Dynamically populated -->
+        </div>
+        <div class="empty-state" id="emptyState" style="display:none;">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <p data-i18n="noResults">没有匹配的结果</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p data-i18n="footerText">LLM Model Updates Tracker — 持续追踪前沿 AI 模型动态</p>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="github-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
