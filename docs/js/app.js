@@ -21,6 +21,7 @@ const COMPANY_META = {
     'ZhipuAI':        { color: '#3859ff', icon: 'zhipu-color.svg' },
     'Tencent':        { color: '#07c160', icon: 'tencent-color.svg' },
     'MiniMax':        { color: '#6c5ce7', icon: 'minimax-color.svg' },
+    'Mistral':        { color: '#FA520F', icon: 'mistral-color.svg' },
 };
 
 // Normalize company names for grouping (e.g., "Deepseek" -> "DeepSeek")
