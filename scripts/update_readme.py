@@ -17,7 +17,9 @@ def generate_readme(data_path, readme_path):
     # 2. Generate new table
     table_content = "| Company      | Model Version                      | Update Date | Improvements & Features                                      |\n"
     table_content += "| :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |\n"
-    for item in data:
+    
+    # Only show the latest 5 models in README
+    for item in data[:5]:
         display_date = datetime.strptime(item['update_date'], '%Y-%m-%d').strftime('%Y-%m-%d')
         
         # Check if there's a blog_url and add badge under company name

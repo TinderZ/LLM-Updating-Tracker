@@ -47,7 +47,7 @@ def get_updates_from_llm(existing_models):
     
     重点关注：OpenAI, Anthropic, Google, Meta, xAI, DeepSeek, 智谱AI, 阿里巴巴(Qwen), 字节跳动, 腾讯, MiniMax, 月之暗面(Kimi) 等。
     
-    目前我们已有的模型列表（部分）: {', '.join(existing_models[:10])}...
+    目前我们已有的模型列表（部分）: {', '.join(existing_models[:5])}...
     
     请返回一个 JSON 数组，格式如下：
     [
