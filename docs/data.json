@@ -1,30 +1,372 @@
 [
     {
+        "company": "ByteDance",
+        "model_name": "Doubao Large Model 2.0 / Seedance 2.0 / Seedream 5.0 Preview",
+        "update_date": "2026-02-14",
+        "blog_url": "https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0",
+        "license_type": "closed_source",
+        "features_zh": "字节跳动火山引擎在除夕夜发布豆包大模型 2.0，包含基础模型能力和企业级 Agent 功能的重大升级；同时发布 Seedance 2.0 音视频创作模型（支持文本/图片/音频/视频多模态输入，生成15秒带原生音频的高质量多镜头视频）和 Seedream 5.0 预览版图像创作模型。",
+        "features_en": "ByteDance Volcano Engine launches Doubao Large Model 2.0 on Chinese New Year's Eve with major upgrades to foundational capabilities and enterprise agent functionalities; simultaneously releases Seedance 2.0 (multimodal audio-video creation, generating 15s multi-shot videos with native audio) and Seedream 5.0 Preview image model."
+    },
+    {
         "company": "OpenAI",
         "model_name": "GPT-5.3-Codex-Spark",
         "update_date": "2026-02-12",
         "blog_url": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
         "license_type": "closed_source",
-        "features_zh": "面向 Codex 的实时编码超低延迟模型（研究预览）；在超低延迟硬件上可达 1000+ tokens/s；128k 上下文、文本-only；推出独立限额并面向 ChatGPT Pro 的 Codex app/CLI/VS Code 扩展逐步开放，同时带来端到端链路降延优化（例如持久 WebSocket 等）。",
-        "features_en": "An ultra-fast, low-latency model for real-time coding in Codex (research preview); delivers 1000+ tokens/sec on ultra-low latency hardware; 128k context, text-only; rolling out with separate rate limits to ChatGPT Pro users via the Codex app/CLI/VS Code extension, alongside end-to-end latency improvements (e.g., persistent WebSocket path)."
+        "features_zh": "面向 Codex 的实时编码超低延迟模型（研究预览）；运行在 Cerebras WSE-3 芯片上，可达 1000+ tokens/s，比 GPT-5.3-Codex 快约15倍；128k 上下文、仅限文本输入；面向 ChatGPT Pro 用户通过 Codex app/CLI/VS Code 扩展逐步开放。",
+        "features_en": "Ultra-fast low-latency real-time coding model for Codex (research preview); runs on Cerebras WSE-3 chip at 1000+ tokens/sec, ~15x faster than GPT-5.3-Codex; 128k context, text-only; rolling out to ChatGPT Pro users via Codex app/CLI/VS Code extension."
     },
     {
         "company": "Google",
-        "model_name": "Gemini 3 Deep Think",
+        "model_name": "Gemini 3 Deep Think (Major Upgrade)",
         "update_date": "2026-02-12",
-        "blog_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think",
+        "blog_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
         "license_type": "closed_source",
-        "features_zh": "Gemini 3 Deep Think 推理模式重大升级，面向科学/研究/工程难题；采用并行推理以同时探索多种假设；在 Gemini 应用向 Google AI Ultra 订阅用户开放，并首次通过 Gemini API 为部分研究者/企业提供早期访问通道。",
-        "features_en": "A major upgrade to Gemini 3 Deep Think, a specialized reasoning mode for science, research, and engineering; uses advanced parallel reasoning to explore multiple hypotheses; available in the Gemini app for Google AI Ultra subscribers and, for the first time, via the Gemini API through an early access program for select users."
+        "features_zh": "Gemini 3 Deep Think 推理模式重大升级，面向科学/研究/工程难题；采用并行推理同时探索多种假设；在学术基准上表现优异（Humanity's Last Exam 48.4%，ARC-AGI-2 84.6%，Codeforces Elo 3455）；在 Gemini App 向 Google AI Ultra 订阅者开放，并首次通过 API 提供早期访问。",
+        "features_en": "Major upgrade to Gemini 3 Deep Think reasoning mode for science, research, and engineering; parallel reasoning exploring multiple hypotheses; 48.4% Humanity's Last Exam, 84.6% ARC-AGI-2, Codeforces Elo 3455, gold-medal on IMO 2025. First available via Gemini API through early access program."
+    },
+    {
+        "company": "MiniMax",
+        "model_name": "M2.5",
+        "update_date": "2026-02-12",
+        "blog_url": "https://www.minimaxi.com/news/minimax-m25",
+        "license_type": "closed_source",
+        "features_zh": "230B 总参数 MoE 架构（约 10B 激活），性能接近 GPT-5.2 和 Claude Opus 4.6，成本仅为后者的 1/20。在编程、工具调用与搜索、办公等场景达到 SOTA 表现，优化了复杂任务拆解与思考 token 消耗，任务处理速度显著提升。",
+        "features_en": "230B total MoE parameters (~10B active), performing comparably to GPT-5.2, Claude Opus 4.6, and Gemini 3 Pro at ~1/20th the cost of Claude Opus 4.6. Productivity-focused upgrade targeting SOTA performance in coding, tool-calling/search, and office workflows."
+    },
+    {
+        "company": "ZhipuAI",
+        "model_name": "GLM-5",
+        "update_date": "2026-02-12",
+        "blog_url": "https://z.ai/blog/glm-5",
+        "license_type": "open_source",
+        "features_zh": "智谱AI新一代旗舰基座，面向 Agentic Engineering 设计。744B 参数 MoE（40B 激活），28.5T 预训练数据。完全基于华为昇腾芯片与 MindSpore 训练，集成 DeepSeek Sparse Attention。SWE-bench Verified 达 77.8%，权重以 MIT 许可开源。",
+        "features_en": "ZhipuAI flagship: 744B total MoE parameters (40-44B active), 200K context, 28.5T tokens pretraining. Fully trained on Huawei Ascend chips with MindSpore framework using novel Slime async RL infrastructure. 77.8% SWE-bench Verified, MIT open-source."
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "GPT-5.2 Instant Update",
+        "update_date": "2026-02-10",
+        "blog_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+        "license_type": "closed_source",
+        "features_zh": "提升回应风格与质量，使其更沉稳且贴合语境；对建议或操作类问题的输出更清晰，并能更可靠地前置显示关键信息。",
+        "features_en": "An update to GPT-5.2 Instant improving response style and quality: more measured/grounded tone, better contextual adaptation, clearer answers for advice/how-to queries, and more reliably surfacing key information upfront."
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Qwen-Image-2.0",
+        "update_date": "2026-02-10",
+        "blog_url": "https://qwen-ai.chat/models/qwen-image-2-0/",
+        "license_type": "open_source",
+        "features_zh": "统一图像生成与编辑模型，支持原生 2K 分辨率；专业排版渲染（PPT、海报、信息图等）；支持最长 1000 token 提示词；轻量 7B 架构。AI Arena 文生图评测全球第三。",
+        "features_en": "Unified image generation and editing model with native 2K (2048x2048) resolution; professional typography rendering (slides, posters, infographics); supports up to 1,000-token prompts; lightweight 7B architecture. Ranked 3rd globally on AI Arena text-to-image evaluation."
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "GPT-5.3-Codex",
+        "update_date": "2026-02-05",
+        "blog_url": "https://openai.com/index/introducing-gpt-5-3-codex/",
+        "license_type": "closed_source",
+        "features_zh": "OpenAI 最强自主编程模型，结合 Codex 和 GPT-5 训练体系；比 GPT-5.2-Codex 快约25%；400K 上下文窗口；在 SWE-Bench Pro、Terminal-Bench 2.0 等评测上刷新行业高点；首个被 OpenAI 网络安全准备框架评定为高能力级别的模型。",
+        "features_en": "OpenAI's most powerful agentic coding model combining Codex and GPT-5 training stacks; ~25% faster than GPT-5.2-Codex; 400K context (128K output); 77.3% Terminal-Bench 2.0, 81.4% SWE-Lancer IC Diamond. First model classified high capability for cybersecurity under OpenAI's Preparedness Framework."
+    },
+    {
+        "company": "Anthropic",
+        "model_name": "Claude Opus 4.6",
+        "update_date": "2026-02-05",
+        "blog_url": "https://www.anthropic.com/news/claude-opus-4-6",
+        "license_type": "closed_source",
+        "features_zh": "Anthropic 最强模型升级；首次为 Opus 级提供 1M token 上下文窗口（Beta）；ARC AGI 2 达 68.8%（近乎翻倍）；GDPval-AA 评测超 GPT-5.2 约 144 Elo。引入 Agent Teams（并行编排）、Effort Tuning、Compaction API 和自适应思维等功能。",
+        "features_en": "Anthropic's smartest model; 1M token context (beta, first for Opus-class); 68.8% ARC AGI 2 (nearly doubles Opus 4.5's 37.6%); outperforms GPT-5.2 by ~144 Elo on GDPval-AA. Introduces Agent Teams, Effort Tuning, Compaction API, adaptive thinking."
+    },
+    {
+        "company": "Mistral",
+        "model_name": "Voxtral Transcribe 2 / Voxtral Realtime",
+        "update_date": "2026-02-04",
+        "blog_url": "https://mistral.ai/news/voxtral-transcribe-2",
+        "license_type": "open_source",
+        "features_zh": "发布两款语音转文本模型：Voxtral Mini Transcribe V2 支持批量转录、说话人分离和字级时间戳（13种语言）；Voxtral Realtime 面向实时应用，延迟低至亚 200 毫秒。采用 Apache 2.0 开源许可。",
+        "features_en": "Two speech-to-text models: Voxtral Mini Transcribe V2 with batch transcription, speaker diarization, and word-level timestamps (13 languages); Voxtral Realtime for live applications with sub-200ms latency. Open weights under Apache 2.0."
+    },
+    {
+        "company": "ZhipuAI",
+        "model_name": "GLM-OCR",
+        "update_date": "2026-01-30",
+        "blog_url": "https://huggingface.co/zai-org/GLM-OCR",
+        "license_type": "open_source",
+        "features_zh": "轻量级复杂文档 OCR 模型（0.9B 参数），在公式、表格和信息抽取等文档理解任务上表现优异（如 OmniDocBench V1.5 指标）；支持 vLLM、SGLang 和 Ollama 部署；以 MIT 许可开源。",
+        "features_en": "A lightweight (0.9B) OCR model for complex document understanding with SOTA results on document tasks (e.g., formulas/tables/information extraction; OmniDocBench V1.5 referenced in the model card); supports vLLM/SGLang/Ollama deployments; open-sourced under the MIT License."
+    },
+    {
+        "company": "Google",
+        "model_name": "Gemini 3 Pro Preview",
+        "update_date": "2026-01-29",
+        "blog_url": "https://developers.googleblog.com/gemini-3-pro-preview",
+        "license_type": "closed_source",
+        "features_zh": "Gemini 3 Pro 预览版正式面向开发者开放，支持 Computer Use 工具调用，并在数学和代码任务上保持领先地位。",
+        "features_en": "Gemini 3 Pro Preview available for developers, supporting Computer Use tool calls and maintaining leadership in math and coding tasks."
+    },
+    {
+        "company": "Moonshot",
+        "model_name": "Kimi K2.5",
+        "update_date": "2026-01-27",
+        "blog_url": "https://kimi-k2.org/en/blog/20-kimi-k2-5-en",
+        "license_type": "open_source",
+        "features_zh": "基于 K2-Base 预训练 15 万亿混合视觉和文本 token；1 万亿总参数 MoE（每 token 激活 32B），4 亿参数视觉编码器实现原生多模态；子智能体功能可并行调度最多 100 个子 Agent，速度提升 3-4.5 倍。",
+        "features_en": "Continual pretraining on ~15T mixed vision-text tokens from K2-Base; 1T total MoE parameters (32B active/token) with 400M vision encoder for native multimodal; Subagents orchestrate up to 100 sub-agents for 3-4.5x speedup. Outperforms GPT-5.2, Claude 4.5 Opus."
+    },
+    {
+        "company": "Tencent",
+        "model_name": "HunyuanImage 3.0-Instruct",
+        "update_date": "2026-01-26",
+        "blog_url": "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
+        "license_type": "open_source",
+        "features_zh": "业界最大开源图像 MoE 模型，80B 总参数（13B 激活）；原生自回归多模态架构统一图像理解与生成；支持先思考再编辑的思维链推理；涵盖 80+ 子任务；LMArena 全球图像编辑开源排名第一。",
+        "features_en": "Industry's largest open-source image MoE model: 80B total (13B active); native autoregressive multimodal architecture unifying understanding and generation; 'think first, then edit' CoT reasoning; 80+ sub-tasks; distilled version needs only 8 sampling steps."
+    },
+    {
+        "company": "ZhipuAI",
+        "model_name": "GLM-4.7-Flash",
+        "update_date": "2026-01-19",
+        "blog_url": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+        "license_type": "open_source",
+        "features_zh": "30B-A3B MoE 轻量混合思考模型，专为高效本地部署设计；在 SWE-bench Verified 和 τ²-Bench 上超越 GPT-OSS-20B，达到同级别开源 SOTA。",
+        "features_en": "30B-A3B MoE lightweight model for efficient local deployment; exceeded 1M Hugging Face downloads in two weeks; outperforms GPT-OSS-20B and Qwen3-30B-A3B-Thinking on SWE-bench Verified and τ²-Bench."
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Qwen3-VL / Qwen3-VL-Flash",
+        "update_date": "2026-01-15",
+        "blog_url": "https://qwen.ai/blog/qwen3-vl",
+        "license_type": "open_source",
+        "features_zh": "Qwen3 系列视觉多模态版本发布，包含 8B/32B 及 Flash 版本；支持长视频理解和更强的 OCR 文本识别能力。",
+        "features_en": "Visual multimodal versions of Qwen3 series released, including 8B/32B and Flash versions; supports long video understanding and enhanced OCR."
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Wan 2.6 系列 (t2i / image / i2v / r2v / t2v)",
+        "update_date": "2026-01-04",
+        "blog_url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "license_type": "open_source",
+        "features_zh": "万相系列创意生成模型重大更新：涵盖自定义尺寸文生图、混合图文编辑、带音频的图生视频、保持人脸声音的参考视频生成以及多镜头叙事文生视频。",
+        "features_en": "Wanxiang creative model updates: wan2.6-t2i text-to-image, wan2.6-image generation+editing, wan2.6-i2v image-to-video with multi-shot+audio, wan2.6-r2v reference-to-video preserving appearance/voice, wan2.6-t2v text-to-video with multi-shot narrative."
+    },
+    {
+        "company": "Tencent",
+        "model_name": "HY-MT1.5 (1.8B / 7B)",
+        "update_date": "2025-12-30",
+        "blog_url": "https://github.com/Tencent-Hunyuan/HY-MT",
+        "license_type": "open_source",
+        "features_zh": "混元翻译模型 1.5 版，提供 1.8B 和 7B 版本，支持 33 种语言及 5 种方言；具备术语干预、上下文翻译及格式化输出能力。",
+        "features_en": "Hunyuan Machine Translation v1.5 in 1.8B and 7B variants, supporting 33 languages and 5 dialect variations; features terminology intervention, contextual translation, and formatted translation."
+    },
+    {
+        "company": "ByteDance",
+        "model_name": "Seed Prover 1.5",
+        "update_date": "2025-12-24",
+        "blog_url": "https://seed.bytedance.com/en/blog/seed-prover-1-5-advanced-mathematical-reasoning-through-a-novel-agentic-architecture",
+        "license_type": "closed_source",
+        "features_zh": "面向形式化数学推理的专用模型，支持 Lean 可验证证明代码；通过大规模 Agentic RL 提升推理效率，并公布了相关技术报告与证明资源。",
+        "features_en": "Rolls out Seed Prover 1.5: a specialized model for formal mathematical reasoning with verifiable Lean proof code; improves capability and efficiency via large-scale agentic RL, with a released technical report and proof-code artifacts."
+    },
+    {
+        "company": "MiniMax",
+        "model_name": "M2.1",
+        "update_date": "2025-12-23",
+        "blog_url": "https://www.minimaxi.com/news/minimax-m21",
+        "license_type": "open_source",
+        "features_zh": "230B 总参数升级版；系统性增强多语言编程（Rust、Java、Go、C++ 等）、Web/App 开发、UI/UX 设计能力；复杂办公场景指令遵循增强，回复更简洁且 token 消耗更低。多语言编码性能超越 Claude Sonnet 4.5。",
+        "features_en": "Major M2 upgrade, 230B total (~10B active); greatly enhanced multilingual programming (Rust, Java, Go, C++, Kotlin, etc.) and UI/UX design; better instruction-following for complex scenarios, more concise responses with lower token usage."
+    },
+    {
+        "company": "ZhipuAI",
+        "model_name": "GLM-4.7",
+        "update_date": "2025-12-22",
+        "blog_url": "https://z.ai/blog/glm-4.7",
+        "license_type": "open_source",
+        "features_zh": "重点优化编码和编程场景的旗舰 LLM；在 Code Arena 评测平台上排名开源和国内模型双料第一；128K 上下文，兼容 vLLM/SGLang 等主流推理框架。",
+        "features_en": "ZhipuAI new-generation flagship LLM optimized for coding; ranked #1 among open-source and domestic models on Code Arena (millions of users); 128K context, compatible with vLLM/SGLang inference frameworks."
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "GPT-5.2-Codex",
+        "update_date": "2025-12-18",
+        "blog_url": "https://openai.com/index/introducing-gpt-5-2-codex/",
+        "license_type": "closed_source",
+        "features_zh": "先进自主编程模型，通过上下文压缩（compaction）改进长周期任务；在大型代码变更（重构/迁移）中表现更佳；强化了 Windows 支持和防御性网络安全能力。",
+        "features_en": "Advanced agentic coding model with context compaction for long-horizon work; better at large code changes (refactors/migrations), improved Windows support, significantly stronger cybersecurity. 56.4% SWE-Bench Pro, 64% Terminal-Bench 2.0."
+    },
+    {
+        "company": "ByteDance",
+        "model_name": "Seed1.8",
+        "update_date": "2025-12-18",
+        "blog_url": "https://seed.bytedance.com/zh/blog/official-release-of-seed1-8-a-generalized-agentic-model",
+        "license_type": "closed_source",
+        "features_zh": "通用 Agent 模型，集搜索、代码与 GUI Agent 能力于一体，支持图文输入；提供三种思考模式以平衡延迟与推理深度；在检索、复杂指令遵循和 Agentic Coding 场景表现突出。",
+        "features_en": "A generalized agentic model combining search, coding, and GUI-agent capabilities with image+text input; offers three thinking modes to balance latency and depth; highlights performance on realistic workflow evaluations."
+    },
+    {
+        "company": "Google",
+        "model_name": "Gemini 3 Flash",
+        "update_date": "2025-12-17",
+        "blog_url": "https://blog.google/products-and-platforms/products/gemini/gemini-3-flash",
+        "license_type": "closed_source",
+        "features_zh": "以 Flash 级速度提供 Pro 级推理，成本不到 Pro 的 1/4；在视觉空间推理、代码执行等方面表现先进；SWE-bench Verified 达 78%，超越了许多 Pro 级模型。已设为 Gemini 应用默认模型。",
+        "features_en": "Pro-grade reasoning at Flash-level speed, <1/4 cost of Gemini 3 Pro; surpasses Gemini 2.5 Pro on many benchmarks; advanced visual/spatial reasoning with code execution; 78% SWE-bench Verified (outperforming Gemini 3 Pro)."
+    },
+    {
+        "company": "Tencent",
+        "model_name": "Tencent HY Vision 1.5 Instruct",
+        "update_date": "2025-12-17",
+        "blog_url": "https://cloud.tencent.com/document/product/1729/97765",
+        "license_type": "closed_source",
+        "features_zh": "基于文本 TurboS 底座的图生文快思考模型，在图像基础识别与图像分析推理维度较上一版本有显著提升。",
+        "features_en": "A new image-to-text fast-thinking model built from the TurboS text foundation, with improvements in basic image recognition and image analysis/reasoning vs. the prior version."
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "GPT-5.2 (Instant / Thinking / Pro)",
+        "update_date": "2025-12-11",
+        "blog_url": "https://openai.com/index/introducing-gpt-5-2/",
+        "license_type": "closed_source",
+        "features_zh": "迄今最强专业知识工作模型系列。Instant（快速）、Thinking（深度推理）、Pro（研究级）。GDPval 达 70.9%（超越 44 个职业专家），SWE-Bench Verified 80%，GPQA Diamond 92.4%，AIME 2025 达 100%。",
+        "features_en": "Most capable model series for professional knowledge work: Instant (fast), Thinking (deep reasoning), Pro (research-grade). 70.9% GDPval, 80% SWE-Bench Verified, 92.4% GPQA Diamond, 100% AIME 2025."
+    },
+    {
+        "company": "Mistral",
+        "model_name": "Devstral 2 / Devstral Small 2",
+        "update_date": "2025-12-09",
+        "blog_url": "https://mistral.ai/news/devstral-2-vibe-cli",
+        "license_type": "open_source",
+        "features_zh": "前沿代码 Agent 模型：Devstral 2（123B 稠密，256K 上下文，SWE-bench 72.2%），Devstral Small 2（24B，SWE-bench 68.0%）。自主工程能力匹敌闭源系统，成本降低约 85%。",
+        "features_en": "Frontier code agent models: Devstral 2 (123B dense, 256K context, 72.2% SWE-bench), Devstral Small 2 (24B, 68.0% SWE-bench). Rivals proprietary systems at ~85% lower cost. Launched with Mistral Vibe CLI."
+    },
+    {
+        "company": "ZhipuAI",
+        "model_name": "GLM-4.6V / GLM-4.6V-Flash",
+        "update_date": "2025-12-08",
+        "blog_url": "http://z.ai/blog/glm-4.6v",
+        "license_type": "open_source",
+        "features_zh": "开源多模态大模型系列，支持 128k 上下文；首次强调原生多模态工具调用，支持将图像、文档等直接作为参数传递，打通了视觉感知到执行的闭环。",
+        "features_en": "Open-source multimodal LLM series (GLM-4.6V 106B and GLM-4.6V-Flash 9B): 128k context; introduces native multimodal tool/function calling where images/docs can be passed directly as tool parameters."
+    },
+    {
+        "company": "Tencent",
+        "model_name": "Hunyuan 2.0 (Think / Instruct)",
+        "update_date": "2025-12-06",
+        "blog_url": "https://technode.com/2025/12/08/tencent-releases-hunyuan-2-0-its-next-generation-ai-model/",
+        "license_type": "open_source",
+        "features_zh": "腾讯下一代大模型，MoE 406B 总参数（32B 激活），256K 超长上下文。分为深度推理（Think）和通用对话（Instruct）双版本，在数学、科学、编码和指令遵循方面有显著提升。",
+        "features_en": "Tencent's next-gen model, MoE 406B total (32B active), 256K context. Think (deep reasoning) and Instruct (general conversation) dual versions. 73.4 on IMO-AnswerBench, significant improvements in math/science/coding/instruction-following."
+    },
+    {
+        "company": "ByteDance",
+        "model_name": "Doubao-Seed-Code",
+        "update_date": "2025-12-03",
+        "blog_url": "https://howaiworks.ai/blog/doubao-seed-code-launch-2025",
+        "license_type": "closed_source",
+        "features_zh": "专业编程模型，SWE-Bench-Verified 达到 SOTA；256K 上下文窗口；成本比行业平均低 62.7%。擅长 Bug 修复、代码生成和前端开发。",
+        "features_en": "ByteDance Volcano Engine's specialized coding model achieving SOTA on SWE-Bench-Verified; 256K context; 62.7% lower cost than industry average. Excels in bug fixing, code generation, and frontend development."
+    },
+    {
+        "company": "Mistral",
+        "model_name": "Mistral Large 3 / Ministral 3 (3B, 8B, 14B)",
+        "update_date": "2025-12-02",
+        "blog_url": "https://mistral.ai/news/mistral-3",
+        "license_type": "open_source",
+        "features_zh": "Mistral 第三代模型：Large 3 为 675B 总参数 MoE，支持 256K 上下文，具备原生多模态能力；Ministral 3 家族主打同级最优性价比，全部采用 Apache 2.0 许可。",
+        "features_en": "Mistral 3 generation: Large 3 is sparse MoE (41B active/675B total), 256K context, native multimodal, #2 on LMArena OSS non-reasoning. Ministral 3 family: 14B/8B/3B dense models with best cost-performance in class."
+    },
+    {
+        "company": "DeepSeek",
+        "model_name": "DeepSeek-V3.2 / DeepSeek-V3.2-Speciale",
+        "update_date": "2025-12-01",
+        "blog_url": "https://api-docs.deepseek.com/news/news251201",
+        "license_type": "open_source",
+        "features_zh": "达到 GPT-5 级性能。V3.2 首次将推理直接集成到工具使用中（Thinking in Tool-Use）；V3.2-Speciale 推理能力极强，在竞赛中获金牌水平。引入 DSA 降低长上下文成本约 50%。",
+        "features_en": "V3.2 achieves GPT-5 level, first model integrating reasoning into tool-use (1,800+ environments). V3.2-Speciale rivals Gemini-3.0-Pro with gold medals at IMO/CMO/ICPC/IOI 2025. Introduces DSA reducing long-context compute ~50%."
+    },
+    {
+        "company": "Anthropic",
+        "model_name": "Claude Opus 4.5",
+        "update_date": "2025-11-24",
+        "blog_url": "https://www.anthropic.com/news/claude-opus-4-5",
+        "license_type": "closed_source",
+        "features_zh": "全球最佳编程模型、最强复杂 Agent 构建模型、最优计算机操控模型；编码/Agent/计算机使用 SOTA。在 SWE-bench 上达到 80.9%。",
+        "features_en": "Anthropic's newest flagship - best coding model, strongest for complex agents, best at computer use; SOTA across coding/agents/computer use. 80.9% on SWE-bench."
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Qwen3-Max / Qwen3-Omni / QVQ-Max",
+        "update_date": "2025-11-22",
+        "blog_url": "https://qwen-ai.chat/models/",
+        "license_type": "mixed",
+        "features_zh": "Qwen3 旗舰系列：Max 拥有 1T+ 参数 MoE，支持 1M 输入；Omni 为原生多模态，支持实时语音交互；QVQ-Max 专为高级逻辑推理和视觉感知分步解决设计。",
+        "features_en": "Qwen3-Max: Flagship LLM with 1T+ MoE parameters, ~1M token input. Qwen3-Omni: Natively multimodal foundation model for real-time text/spoken responses. QVQ-Max: Purpose-built for advanced logical reasoning and step-by-step problem-solving."
+    },
+    {
+        "company": "Tencent",
+        "model_name": "HunyuanVideo-1.5",
+        "update_date": "2025-11-21",
+        "blog_url": "https://github.com/Tencent/HunyuanVideo",
+        "license_type": "open_source",
+        "features_zh": "腾讯混元视频生成模型升级版，进一步提升了视频生成的连贯性和质感，保持开源。",
+        "features_en": "Upgraded version of Tencent's Hunyuan video generation model, further improving video coherence and texture; remains open source."
+    },
+    {
+        "company": "xAI",
+        "model_name": "Grok 4.1 Fast / Agent Tools API",
+        "update_date": "2025-11-19",
+        "blog_url": "https://x.ai/news/grok-4-1-fast",
+        "license_type": "closed_source",
+        "features_zh": "同类最佳工具调用模型，2M 上下文窗口；专为企业场景训练。配套推出 Agent Tools API，支持实时 X 数据访问、网络搜索及远程代码执行。",
+        "features_en": "Best-in-class tool-calling model, 2M context; trained for enterprise use cases; 100% τ²-bench Telecom. Launched Agent Tools API (real-time X data, web search, remote code execution)."
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "GPT-5.1-Codex-Max",
+        "update_date": "2025-11-19",
+        "blog_url": "https://openai.com/index/gpt-5-1-codex-max/",
+        "license_type": "closed_source",
+        "features_zh": "面向项目级长周期 Agentic 编码模型。通过 compaction 技术实现跨窗口连贯工作，单任务可处理数百万 tokens；增强了代码评审和长程任务能力。",
+        "features_en": "A frontier agentic coding model for long-running, project-scale work; uses compaction to operate coherently across multiple context windows (millions of tokens in a single task); targets PR/code review/long-horizon tasks."
+    },
+    {
+        "company": "Google",
+        "model_name": "Gemini 3 Pro",
+        "update_date": "2025-11-18",
+        "blog_url": "https://blog.google/products/gemini/gemini-3/",
+        "license_type": "closed_source",
+        "features_zh": "Gemini 3 时代开启。具备强大的多模态推理能力（文本/图/影/码）；GPQA Diamond 91.9%，并在数学（MathArena Apex）和 Web 开发领域创下新纪录。",
+        "features_en": "Google's most intelligent model. LMArena 1501, 37.5% Humanity's Last Exam, 91.9% GPQA Diamond, 23.4% MathArena Apex (new math SOTA), #1 WebDev Arena (1487 ELO)."
+    },
+    {
+        "company": "xAI",
+        "model_name": "Grok 4.1 (Thinking / Non-Thinking)",
+        "update_date": "2025-11-17",
+        "blog_url": "https://x.ai/news/grok-4-1",
+        "license_type": "closed_source",
+        "features_zh": "对话更自然流畅，同时保持强推理。Thinking 变体在 LMArena 文本榜单排名第一。EQ-Bench3 情感智能第一，创意写作能力显著提升。",
+        "features_en": "Thinking variant ranks #1 on LMArena Text (1483 Elo), Non-Thinking #2 (1465 Elo). Released after 2-week silent rollout; 64.78% preference in blind evals; #1 on EQ-Bench3."
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Qwen2.5 (Family)",
+        "update_date": "2025-11-10",
+        "blog_url": "https://qwen.ai/blog/qwen2.5",
+        "license_type": "open_source",
+        "features_zh": "发布超过 100 个模型，覆盖 0.5B 到 72B 参数；训练数据量达 18T tokens，全面提升了编码、数学和通用指令遵循能力。",
+        "features_en": "Released over 100 open-source models ranging from 0.5B to 72B parameters; trained on 18T tokens, comprehensively improving coding and math capabilities."
     },
     {
         "company": "Moonshot",
         "model_name": "Kimi-K2-Thinking",
         "update_date": "2025-11-07",
-        "blog_url": "https://kimi-k2.org/zh/blog/15-kimi-k2-thinking-zh",
+        "blog_url": "https://kimi-k2.org/en/blog/15-kimi-k2-thinking-en",
         "license_type": "open_source",
-        "features_zh": "第一代原生支持\"边思考，边使用工具\"的Thinking Agent，标志着开源AI推理模型的重大突破，将进一步缩小与闭源顶级模型的性能差距。",
-        "features_en": "The first-generation Thinking Agent with native support for \"thinking while using tools\", marking a major breakthrough in open-source AI reasoning models and further closing the performance gap with top closed-source models."
+        "features_zh": "第一代原生支持边思考边使用工具的 Thinking Agent。推理过程中可实时调用外部工具并根据反馈进行自主优化；是开源 AI 推理模型的重大突破。",
+        "features_en": "First-generation Thinking Agent with native 'thinking while using tools'; calls external tools during reasoning rather than completing thinking first; supports real-time tool calling and autonomous optimization."
     },
     {
         "company": "OpenAI",
