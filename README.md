@@ -4,7 +4,7 @@
 # LLM Model Tracker (Keep Updating~)
 
 > [!TIP]
-> **网页版已上线！** 访问更美观的在线时间轴：[https://tinderz.github.io/LLM-Model-Updates-Tracker/](https://tinderz.github.io/LLM-Model-Updates-Tracker/)
+> **网页版已上线！** 访问更美观的在线时间轴：[https://tinderz.github.io/LLM-Tracker/](https://tinderz.github.io/LLM-Tracker/)
 
 A tracker for the latest updates on Large Language Models from various companies.
 
