@@ -9,19 +9,18 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2026-02-14*
+*Last updated: 2026-02-19*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
-| Moonshot<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://kimi-k2.org/zh/blog/15-kimi-k2-thinking-zh) | Kimi-K2-Thinking | 2025-11-07 | 第一代原生支持"边思考，边使用工具"的Thinking Agent，标志着开源AI推理模型的重大突破，将进一步缩小与闭源顶级模型的性能差距。 |
-| OpenAI | Sora2 | 2025-10-01 | Sora2 正式发布, 用于生成短视频。 |
-| Anthropic<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://www.anthropic.com/news/claude-sonnet-4-5) | Claude-4.5-Sonnet | 2025-09-30 | Claude Sonnet 4.5 is the best coding model in the world. It's the strongest model for building complex agents. It’s the best model at using computers. And it shows substantial gains in reasoning and math. |
-| ZhipuAI | GLM-4.6 | 2025-09-30 | 前脚DeepSeek更新到了V3.2，现在智谱又更新了——正式推出GLM-4.6，代码能力直接推到了国内最强。 |
-| DeepSeek<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp/blob/main/DeepSeek_V3_2.pdf) | DeepSeek-V3.2-Exp | 2025-09-29 | 假期前一天，熟悉的节奏。 |
+| ByteDance<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0) | Doubao Large Model 2.0 / Seedance 2.0 / Seedream 5.0 Preview | 2026-02-14 | 字节跳动火山引擎在除夕夜发布豆包大模型 2.0，包含基础模型能力和企业级 Agent 功能的重大升级；同时发布 Seedance 2.0 音视频创作模型（支持文本/图片/音频/视频多模态输入，生成15秒带原生音频的高质量多镜头视频）和 Seedream 5.0 预览版图像创作模型。 |
+| OpenAI<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://openai.com/index/introducing-gpt-5-3-codex-spark/) | GPT-5.3-Codex-Spark | 2026-02-12 | 面向 Codex 的实时编码超低延迟模型（研究预览）；运行在 Cerebras WSE-3 芯片上，可达 1000+ tokens/s，比 GPT-5.3-Codex 快约15倍；128k 上下文、仅限文本输入；面向 ChatGPT Pro 用户通过 Codex app/CLI/VS Code 扩展逐步开放。 |
+| Google<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/) | Gemini 3 Deep Think (Major Upgrade) | 2026-02-12 | Gemini 3 Deep Think 推理模式重大升级，面向科学/研究/工程难题；采用并行推理同时探索多种假设；在学术基准上表现优异（Humanity's Last Exam 48.4%，ARC-AGI-2 84.6%，Codeforces Elo 3455）；在 Gemini App 向 Google AI Ultra 订阅者开放，并首次通过 API 提供早期访问。 |
+| MiniMax<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://www.minimaxi.com/news/minimax-m25) | M2.5 | 2026-02-12 | 230B 总参数 MoE 架构（约 10B 激活），性能接近 GPT-5.2 和 Claude Opus 4.6，成本仅为后者的 1/20。在编程、工具调用与搜索、办公等场景达到 SOTA 表现，优化了复杂任务拆解与思考 token 消耗，任务处理速度显著提升。 |
+| ZhipuAI<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://z.ai/blog/glm-5) | GLM-5 | 2026-02-12 | 智谱AI新一代旗舰基座，面向 Agentic Engineering 设计。744B 参数 MoE（40B 激活），28.5T 预训练数据。完全基于华为昇腾芯片与 MindSpore 训练，集成 DeepSeek Sparse Attention。SWE-bench Verified 达 77.8%，权重以 MIT 许可开源。 |
 
-*注：README 仅展示最新的 5 条记录。查看完整历史，请访问 [网页版](https://tinderz.github.io/LLM-Model-Updates-Tracker/)。*
 <!-- TABLE_END -->
 
 ## 🌟 Features
