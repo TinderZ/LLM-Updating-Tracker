@@ -18,7 +18,7 @@
         "features_en": "Anthropic’s most capable Sonnet model yet: broad upgrades across coding, computer use, long-context reasoning, agent planning, knowledge work, and design; includes a 1M-token context window in beta on the API; becomes the default model on claude.ai with Sonnet 4.5 pricing."
     },
     {
-        "company": "Alibaba Cloud (Qwen/通义千问)",
+        "company": "Alibaba",
         "model_name": "Qwen3.5（首发开源权重：Qwen3.5-397B-A17B；托管版：Qwen3.5-Plus）",
         "update_date": "2026-02-17",
         "blog_url": "https://www.alibabacloud.com/blog/qwen3-5-towards-native-multimodal-agents_602894",
