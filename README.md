@@ -9,17 +9,17 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2026-02-19*
+*Last updated: 2026-02-21*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
+| Google<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro) | Gemini 3.1 Pro | 2026-02-19 | Gemini 3 系列升级后的“核心智能”模型，面向需要高级推理的复杂任务（如数据综合与复杂主题解释）；以预览版形式发布，并通过 Gemini API、Vertex AI、Gemini App 与 NotebookLM 等渠道逐步上线。 |
+| Anthropic<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://www.anthropic.com/news/claude-sonnet-4-6) | Claude Sonnet 4.6 | 2026-02-17 | Sonnet 系列迄今最强升级：在编码、计算机使用（computer use）、长上下文推理、Agent 规划、知识工作与设计等方面全面提升；API 提供 1M token 上下文窗口（beta）；在 Claude.ai 默认模型，并保持与 Sonnet 4.5 相同定价。 |
+| Alibaba<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://www.alibabacloud.com/blog/qwen3-5-towards-native-multimodal-agents_602894) | Qwen3.5（首发开源权重：Qwen3.5-397B-A17B；托管版：Qwen3.5-Plus） | 2026-02-17 | 官方发布 Qwen3.5，并开源首个模型权重 Qwen3.5-397B-A17B（原生视觉-语言模型）。采用混合架构（线性注意力 Gated Delta Networks + 稀疏 MoE），总参数 397B、单次激活 17B，强调推理效率与成本；覆盖推理、编程、Agent 能力与多模态理解等；语言/方言支持从 119 扩展到 201。官方托管模型 Qwen3.5-Plus 通过阿里云 Model Studio 提供，默认 1M 上下文，并带内置工具与自适应工具调用。 |
 | ByteDance<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0) | Doubao Large Model 2.0 / Seedance 2.0 / Seedream 5.0 Preview | 2026-02-14 | 字节跳动火山引擎在除夕夜发布豆包大模型 2.0，包含基础模型能力和企业级 Agent 功能的重大升级；同时发布 Seedance 2.0 音视频创作模型（支持文本/图片/音频/视频多模态输入，生成15秒带原生音频的高质量多镜头视频）和 Seedream 5.0 预览版图像创作模型。 |
 | OpenAI<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://openai.com/index/introducing-gpt-5-3-codex-spark/) | GPT-5.3-Codex-Spark | 2026-02-12 | 面向 Codex 的实时编码超低延迟模型（研究预览）；运行在 Cerebras WSE-3 芯片上，可达 1000+ tokens/s，比 GPT-5.3-Codex 快约15倍；128k 上下文、仅限文本输入；面向 ChatGPT Pro 用户通过 Codex app/CLI/VS Code 扩展逐步开放。 |
-| Google<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/) | Gemini 3 Deep Think (Major Upgrade) | 2026-02-12 | Gemini 3 Deep Think 推理模式重大升级，面向科学/研究/工程难题；采用并行推理同时探索多种假设；在学术基准上表现优异（Humanity's Last Exam 48.4%，ARC-AGI-2 84.6%，Codeforces Elo 3455）；在 Gemini App 向 Google AI Ultra 订阅者开放，并首次通过 API 提供早期访问。 |
-| MiniMax<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://www.minimaxi.com/news/minimax-m25) | M2.5 | 2026-02-12 | 230B 总参数 MoE 架构（约 10B 激活），性能接近 GPT-5.2 和 Claude Opus 4.6，成本仅为后者的 1/20。在编程、工具调用与搜索、办公等场景达到 SOTA 表现，优化了复杂任务拆解与思考 token 消耗，任务处理速度显著提升。 |
-| ZhipuAI<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://z.ai/blog/glm-5) | GLM-5 | 2026-02-12 | 智谱AI新一代旗舰基座，面向 Agentic Engineering 设计。744B 参数 MoE（40B 激活），28.5T 预训练数据。完全基于华为昇腾芯片与 MindSpore 训练，集成 DeepSeek Sparse Attention。SWE-bench Verified 达 77.8%，权重以 MIT 许可开源。 |
 
 <!-- TABLE_END -->
 
