@@ -1,5 +1,32 @@
 [
     {
+        "company": "Anthropic",
+        "model_name": "Claude Sonnet 4.6",
+        "update_date": "2026-02-17",
+        "blog_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "license_type": "closed_source",
+        "features_zh": "Sonnet 系列迄今最强升级：在编码、计算机使用（computer use）、长上下文推理、Agent 规划、知识工作与设计等方面全面提升；API 提供 1M token 上下文窗口（beta）；在 Claude.ai 默认模型，并保持与 Sonnet 4.5 相同定价。",
+        "features_en": "Anthropic’s most capable Sonnet model yet: broad upgrades across coding, computer use, long-context reasoning, agent planning, knowledge work, and design; includes a 1M-token context window in beta on the API; becomes the default model on claude.ai with Sonnet 4.5 pricing."
+    },
+    {
+        "company": "Google",
+        "model_name": "Gemini 3.1 Pro",
+        "update_date": "2026-02-19",
+        "blog_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro",
+        "license_type": "closed_source",
+        "features_zh": "Gemini 3 系列升级后的“核心智能”模型，面向需要高级推理的复杂任务（如数据综合与复杂主题解释）；以预览版形式发布，并通过 Gemini API、Vertex AI、Gemini App 与 NotebookLM 等渠道逐步上线。",
+        "features_en": "An upgraded core-intelligence Gemini 3-series model for complex tasks requiring advanced reasoning (e.g., synthesizing data and explaining complex topics); released in preview and rolling out via the Gemini API, Vertex AI, the Gemini app, and NotebookLM."
+    },
+    {
+        "company": "Alibaba Cloud (Qwen/通义千问)",
+        "model_name": "Qwen3.5（首发开源权重：Qwen3.5-397B-A17B；托管版：Qwen3.5-Plus）",
+        "update_date": "2026-02-17",
+        "blog_url": "https://www.alibabacloud.com/blog/qwen3-5-towards-native-multimodal-agents_602894",
+        "license_type": "open_source",
+        "features_zh": "官方发布 Qwen3.5，并开源首个模型权重 Qwen3.5-397B-A17B（原生视觉-语言模型）。采用混合架构（线性注意力 Gated Delta Networks + 稀疏 MoE），总参数 397B、单次激活 17B，强调推理效率与成本；覆盖推理、编程、Agent 能力与多模态理解等；语言/方言支持从 119 扩展到 201。官方托管模型 Qwen3.5-Plus 通过阿里云 Model Studio 提供，默认 1M 上下文，并带内置工具与自适应工具调用。",
+        "features_en": "Official release of Qwen3.5 with the first open-weight model Qwen3.5-397B-A17B (a native vision-language model). It uses a hybrid architecture (linear attention via Gated Delta Networks + sparse MoE), with 397B total parameters and 17B activated per forward pass for improved inference efficiency; strong results across reasoning, coding, agent capabilities, and multimodal understanding; language/dialect coverage expanded from 119 to 201. The hosted Qwen3.5-Plus on Alibaba Cloud Model Studio offers built-in tools/adaptive tool use and a 1M context window by default."
+    },
+    {
         "company": "ByteDance",
         "model_name": "Doubao Large Model 2.0 / Seedance 2.0 / Seedream 5.0 Preview",
         "update_date": "2026-02-14",
