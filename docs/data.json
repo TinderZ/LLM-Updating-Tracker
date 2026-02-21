@@ -1,14 +1,5 @@
 [
     {
-        "company": "Anthropic",
-        "model_name": "Claude Sonnet 4.6",
-        "update_date": "2026-02-17",
-        "blog_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-        "license_type": "closed_source",
-        "features_zh": "Sonnet 系列迄今最强升级：在编码、计算机使用（computer use）、长上下文推理、Agent 规划、知识工作与设计等方面全面提升；API 提供 1M token 上下文窗口（beta）；在 Claude.ai 默认模型，并保持与 Sonnet 4.5 相同定价。",
-        "features_en": "Anthropic’s most capable Sonnet model yet: broad upgrades across coding, computer use, long-context reasoning, agent planning, knowledge work, and design; includes a 1M-token context window in beta on the API; becomes the default model on claude.ai with Sonnet 4.5 pricing."
-    },
-    {
         "company": "Google",
         "model_name": "Gemini 3.1 Pro",
         "update_date": "2026-02-19",
@@ -16,6 +7,15 @@
         "license_type": "closed_source",
         "features_zh": "Gemini 3 系列升级后的“核心智能”模型，面向需要高级推理的复杂任务（如数据综合与复杂主题解释）；以预览版形式发布，并通过 Gemini API、Vertex AI、Gemini App 与 NotebookLM 等渠道逐步上线。",
         "features_en": "An upgraded core-intelligence Gemini 3-series model for complex tasks requiring advanced reasoning (e.g., synthesizing data and explaining complex topics); released in preview and rolling out via the Gemini API, Vertex AI, the Gemini app, and NotebookLM."
+    },
+    {
+        "company": "Anthropic",
+        "model_name": "Claude Sonnet 4.6",
+        "update_date": "2026-02-17",
+        "blog_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "license_type": "closed_source",
+        "features_zh": "Sonnet 系列迄今最强升级：在编码、计算机使用（computer use）、长上下文推理、Agent 规划、知识工作与设计等方面全面提升；API 提供 1M token 上下文窗口（beta）；在 Claude.ai 默认模型，并保持与 Sonnet 4.5 相同定价。",
+        "features_en": "Anthropic’s most capable Sonnet model yet: broad upgrades across coding, computer use, long-context reasoning, agent planning, knowledge work, and design; includes a 1M-token context window in beta on the API; becomes the default model on claude.ai with Sonnet 4.5 pricing."
     },
     {
         "company": "Alibaba Cloud (Qwen/通义千问)",
