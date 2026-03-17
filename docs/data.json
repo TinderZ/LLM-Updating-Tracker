@@ -1,5 +1,95 @@
 [
     {
+        "company": "ZhipuAI",
+        "model_name": "GLM-5-Turbo",
+        "update_date": "2026-03-16",
+        "blog_url": "https://finance.eastmoney.com/a/202603163672888826.html",
+        "license_type": "closed_source",
+        "features_zh": "面向 OpenClaw（龙虾/Agent）场景深度优化的基座模型；从训练阶段就针对龙虾任务核心需求专项优化，增强工具调用、指令遵循、定时与持续性任务、长链路执行等能力；在自研基准 ZClawBench 中取得国产模型第一；同步推出龙虾套餐（个人版 39 元/月起）和企业级安全管理体系。",
+        "features_en": "Foundation model deeply optimized for the OpenClaw (agent) scenario; enhanced from the training stage for core agent task requirements including tool calling, instruction following, scheduled/persistent tasks, and long-chain execution; ranked #1 among domestic models on the proprietary ZClawBench benchmark; launched with consumer and enterprise subscription plans and a Claw enterprise security management framework."
+    },
+    {
+        "company": "Mistral",
+        "model_name": "Mistral Small 4",
+        "update_date": "2026-03-16",
+        "blog_url": "https://docs.mistral.ai/getting-started/changelog/",
+        "license_type": "open_source",
+        "features_zh": "119B 参数 MoE 模型（128 专家，每 token 激活 4 个专家/6B 参数），首次将指令遵循（Mistral Small）、推理（Magistral）、多模态（Pixtral）和编码（Devstral）统一到单一模型中；256K 上下文窗口；支持推理深度可配参数（reasoning_effort）；端到端完成时间降低 40%，吞吐量提高 3 倍。",
+        "features_en": "119B-parameter MoE model (128 experts, 4 active/token, 6B active params) that unifies instruct, reasoning, multimodal, and coding into a single deployment; 256K context window; configurable per-request reasoning_effort parameter; 40% faster end-to-end completion and 3x throughput improvement."
+    },
+    {
+        "company": "NVIDIA",
+        "model_name": "Nemotron 3 Super",
+        "update_date": "2026-03-11",
+        "blog_url": "https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/",
+        "license_type": "open_source",
+        "features_zh": "120B 总参数（12B 激活）的开源混合 Mamba-Transformer MoE 模型，面向 Agentic AI；1M token 上下文窗口；吞吐量比前代提升 5 倍，精度提升 2 倍；支持多 token 预测（MTP）实现 3 倍推理加速；在 Blackwell GPU 上以 NVFP4 精度运行，比 Hopper FP8 快 4 倍。完全开源（权重、数据集和训练配方）。",
+        "features_en": "120B total (12B active) open-source hybrid Mamba-Transformer MoE for agentic AI; 1M token context; 5x throughput and 2x accuracy over predecessor; multi-token prediction for 3x faster inference; 4x faster on Blackwell NVFP4 vs Hopper FP8. Fully open with weights, datasets, and recipes."
+    },
+    {
+        "company": "Google",
+        "model_name": "Gemini Embedding 2",
+        "update_date": "2026-03-10",
+        "blog_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-embedding-2/",
+        "license_type": "closed_source",
+        "features_zh": "Google 首个原生多模态嵌入模型，可将文本、图像、视频、音频和文档映射到统一的嵌入空间；文本输入上限 8192 token（4 倍于前代）；生成 3072 维向量，支持 Matryoshka 表示学习灵活压缩维度；支持 100+ 语言；通过 Gemini API 和 Vertex AI 以公开预览提供。",
+        "features_en": "Google's first natively multimodal embedding model mapping text, images, video, audio, and documents into a single embedding space; 8,192-token text input (4x increase); 3,072-dim vectors with Matryoshka Representation Learning for flexible compression; 100+ languages; available in public preview via Gemini API and Vertex AI."
+    },
+    {
+        "company": "xAI",
+        "model_name": "Grok 4.20 Beta Non-Reasoning (Stable)",
+        "update_date": "2026-03-09",
+        "blog_url": "https://docs.x.ai/docs/release-notes",
+        "license_type": "closed_source",
+        "features_zh": "Grok 4.20 系列的速度优先变体，正式进入稳定 Beta 阶段；不使用思维链推理直接生成回答，输出速度达 232.5 tokens/s；2M token 上下文窗口；支持文本和图像输入；在同价位非推理模型中 AI 分析指数得分排名领先。",
+        "features_en": "Speed-focused variant of Grok 4.20 now in stable beta; skips chain-of-thought reasoning for direct answers at 232.5 tokens/sec; 2M token context window; text and image input; scores above median on Artificial Analysis Intelligence Index for non-reasoning models in its price tier."
+    },
+    {
+        "company": "OpenAI",
+        "model_name": "GPT-5.4 / GPT-5.4 Thinking / GPT-5.4 Pro",
+        "update_date": "2026-03-05",
+        "blog_url": "https://openai.com/index/introducing-gpt-5-4/",
+        "license_type": "closed_source",
+        "features_zh": "OpenAI 最强前沿模型，面向专业知识工作；首个具备原生计算机操控（computer use）能力的通用模型，可自动操作电脑完成复杂工作流；最高 1M token 上下文窗口；虚假声明比 GPT-5.2 减少 33%；GDPval 达 83%，OSWorld-Verified 计算机操控达 75%（创纪录）；提供 Thinking（含推理展示）和 Pro 版本。",
+        "features_en": "OpenAI's most capable frontier model for professional work; first general-purpose model with native computer-use capabilities; up to 1M token context window; 33% fewer false claims than GPT-5.2; 83% GDPval, record 75% OSWorld-Verified computer use; available as GPT-5.4 Thinking (with reasoning display) and GPT-5.4 Pro."
+    },
+    {
+        "company": "MiniMax",
+        "model_name": "MiniMax Music 2.5+",
+        "update_date": "2026-03-04",
+        "blog_url": "https://releasebot.io/updates/minimax",
+        "license_type": "closed_source",
+        "features_zh": "扩展的器乐音乐创作模型，超越歌曲生成，支持多种风格（古典、电子、环境音乐、民族音色等）；可用于影视配乐、广告音乐、游戏原声和冥想音乐；支持跨流派融合创作。",
+        "features_en": "Expanded instrumental music creation model beyond song generation; supports classical, electronic, ambient, ethnic timbres; enables film/TV scoring, advertising, game soundtracks, and meditation music; supports cross-genre fusion combining traditional and modern instruments."
+    },
+    {
+        "company": "xAI",
+        "model_name": "Grok 4.20 Beta 2",
+        "update_date": "2026-03-03",
+        "blog_url": "https://docs.x.ai/docs/release-notes",
+        "license_type": "closed_source",
+        "features_zh": "Grok 4.20 Beta 的可靠性更新，修复五项关键问题：增强多步骤指令遵循、减少能力幻觉（利用四智能体互审机制）、改进科学文本 LaTeX 渲染质量、提升图片搜索精度、增强多图渲染稳定性。",
+        "features_en": "Reliability update for Grok 4.20 Beta addressing five key areas: enhanced multi-step instruction following, reduced capability hallucination via four-agent peer-review mechanism, improved LaTeX/scientific text rendering, tighter image search precision, and more stable multi-image rendering."
+    },
+    {
+        "company": "Google",
+        "model_name": "Gemini 3.1 Flash Lite",
+        "update_date": "2026-03-03",
+        "blog_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite",
+        "license_type": "closed_source",
+        "features_zh": "Gemini 3 系列中最具性价比的模型，输入 $0.25/M tokens、输出 $1.50/M tokens；支持多模态提示（最高 1M token）和最多 64K token 输出；输出速度比 Gemini 2.5 Flash 快 45%，TTFT 快 2.5 倍；在 11 项基准中有 6 项得分最高，面向翻译、内容审核、数据提取等高吞吐量场景。",
+        "features_en": "Most cost-efficient model in Gemini 3 series at $0.25/$1.50 per 1M input/output tokens; multimodal prompts up to 1M tokens with 64K token output; 45% faster output and 2.5x faster TTFT vs Gemini 2.5 Flash; top scores on 6/11 benchmarks; designed for high-volume tasks like translation, content moderation, and data extraction."
+    },
+    {
+        "company": "Alibaba",
+        "model_name": "Qwen3.5 Medium 系列（Qwen3.5-27B / Qwen3.5-35B-A3B / Qwen3.5-122B-A10B / Qwen3.5-Flash）",
+        "update_date": "2026-02-25",
+        "blog_url": "https://qwen-ai.chat/models/qwen3-5-medium/",
+        "license_type": "open_source",
+        "features_zh": "Qwen3.5 中型模型系列开源发布：包含 Qwen3.5-27B（稠密架构）、Qwen3.5-35B-A3B 和 Qwen3.5-122B-A10B（MoE 架构），以及 API 专有的 Qwen3.5-Flash；默认 262K 上下文（Flash 最高 1M）；采用 Apache 2.0 许可开源；性能接近 Claude Sonnet 4.5，适合本地部署和中小团队使用。",
+        "features_en": "Qwen3.5 medium model series open-sourced: Qwen3.5-27B (dense), Qwen3.5-35B-A3B, and Qwen3.5-122B-A10B (MoE), plus API-only Qwen3.5-Flash; 262K default context (up to 1M for Flash); Apache 2.0 license; near-Sonnet 4.5 performance suitable for local deployment and small-to-medium teams."
+    },
+    {
         "company": "Google",
         "model_name": "Gemini 3.1 Pro",
         "update_date": "2026-02-19",
