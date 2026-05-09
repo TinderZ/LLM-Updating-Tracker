@@ -9,17 +9,17 @@
 A tracker for the latest updates on Large Language Models from various companies.
 
 <!-- LAST_UPDATED_START -->
-*Last updated: 2026-02-19*
+*Last updated: 2026-05-09*
 <!-- LAST_UPDATED_END -->
 
 <!-- TABLE_START -->
 | Company      | Model Version                      | Update Date | Improvements & Features                                      |
 | :----------- | :--------------------------------- | :---------- | :----------------------------------------------------------- |
-| ByteDance<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0) | Doubao Large Model 2.0 / Seedance 2.0 / Seedream 5.0 Preview | 2026-02-14 | 字节跳动火山引擎在除夕夜发布豆包大模型 2.0，包含基础模型能力和企业级 Agent 功能的重大升级；同时发布 Seedance 2.0 音视频创作模型（支持文本/图片/音频/视频多模态输入，生成15秒带原生音频的高质量多镜头视频）和 Seedream 5.0 预览版图像创作模型。 |
-| OpenAI<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://openai.com/index/introducing-gpt-5-3-codex-spark/) | GPT-5.3-Codex-Spark | 2026-02-12 | 面向 Codex 的实时编码超低延迟模型（研究预览）；运行在 Cerebras WSE-3 芯片上，可达 1000+ tokens/s，比 GPT-5.3-Codex 快约15倍；128k 上下文、仅限文本输入；面向 ChatGPT Pro 用户通过 Codex app/CLI/VS Code 扩展逐步开放。 |
-| Google<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/) | Gemini 3 Deep Think (Major Upgrade) | 2026-02-12 | Gemini 3 Deep Think 推理模式重大升级，面向科学/研究/工程难题；采用并行推理同时探索多种假设；在学术基准上表现优异（Humanity's Last Exam 48.4%，ARC-AGI-2 84.6%，Codeforces Elo 3455）；在 Gemini App 向 Google AI Ultra 订阅者开放，并首次通过 API 提供早期访问。 |
-| MiniMax<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://www.minimaxi.com/news/minimax-m25) | M2.5 | 2026-02-12 | 230B 总参数 MoE 架构（约 10B 激活），性能接近 GPT-5.2 和 Claude Opus 4.6，成本仅为后者的 1/20。在编程、工具调用与搜索、办公等场景达到 SOTA 表现，优化了复杂任务拆解与思考 token 消耗，任务处理速度显著提升。 |
-| ZhipuAI<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://z.ai/blog/glm-5) | GLM-5 | 2026-02-12 | 智谱AI新一代旗舰基座，面向 Agentic Engineering 设计。744B 参数 MoE（40B 激活），28.5T 预训练数据。完全基于华为昇腾芯片与 MindSpore 训练，集成 DeepSeek Sparse Attention。SWE-bench Verified 达 77.8%，权重以 MIT 许可开源。 |
+| ZhipuAI<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://finance.eastmoney.com/a/202603163672888826.html) | GLM-5-Turbo | 2026-03-16 | 面向 OpenClaw（龙虾/Agent）场景深度优化的基座模型；从训练阶段就针对龙虾任务核心需求专项优化，增强工具调用、指令遵循、定时与持续性任务、长链路执行等能力；在自研基准 ZClawBench 中取得国产模型第一；同步推出龙虾套餐（个人版 39 元/月起）和企业级安全管理体系。 |
+| Mistral<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://docs.mistral.ai/getting-started/changelog/) | Mistral Small 4 | 2026-03-16 | 119B 参数 MoE 模型（128 专家，每 token 激活 4 个专家/6B 参数），首次将指令遵循（Mistral Small）、推理（Magistral）、多模态（Pixtral）和编码（Devstral）统一到单一模型中；256K 上下文窗口；支持推理深度可配参数（reasoning_effort）；端到端完成时间降低 40%，吞吐量提高 3 倍。 |
+| NVIDIA<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/) | Nemotron 3 Super | 2026-03-11 | 120B 总参数（12B 激活）的开源混合 Mamba-Transformer MoE 模型，面向 Agentic AI；1M token 上下文窗口；吞吐量比前代提升 5 倍，精度提升 2 倍；支持多 token 预测（MTP）实现 3 倍推理加速；在 Blackwell GPU 上以 NVFP4 精度运行，比 Hopper FP8 快 4 倍。完全开源（权重、数据集和训练配方）。 |
+| Google<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-embedding-2/) | Gemini Embedding 2 | 2026-03-10 | Google 首个原生多模态嵌入模型，可将文本、图像、视频、音频和文档映射到统一的嵌入空间；文本输入上限 8192 token（4 倍于前代）；生成 3072 维向量，支持 Matryoshka 表示学习灵活压缩维度；支持 100+ 语言；通过 Gemini API 和 Vertex AI 以公开预览提供。 |
+| xAI<br/>[![Blog](https://img.shields.io/badge/Blog-技术报告-blue?style=flat-square&logo=blogger)](https://docs.x.ai/docs/release-notes) | Grok 4.20 Beta Non-Reasoning (Stable) | 2026-03-09 | Grok 4.20 系列的速度优先变体，正式进入稳定 Beta 阶段；不使用思维链推理直接生成回答，输出速度达 232.5 tokens/s；2M token 上下文窗口；支持文本和图像输入；在同价位非推理模型中 AI 分析指数得分排名领先。 |
 
 <!-- TABLE_END -->
 
